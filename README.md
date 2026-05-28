@@ -32,5 +32,4 @@ Instead of treating UX laws as decorative citations, this skill turns them into 
 - `SKILL.md`: trigger description and core workflow
 - `references/laws-map.md`: Primary and Secondary UX laws map
 - `references/ux-thinking.md`: overall UX thinking frame
-- `references/notion-distilled-laws.md`: distilled guidance from the user's Notion UX pages
 - `agents/openai.yaml`: UI metadata for the Codex skill
