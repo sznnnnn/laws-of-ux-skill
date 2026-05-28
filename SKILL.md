@@ -130,6 +130,5 @@ Short design rationale in product language.
 
 - Read `references/laws-map.md` when you need to select laws or explain the rationale.
 - Read `references/ux-thinking.md` when you need the user's overall philosophy for applying the laws.
-- Read `references/notion-distilled-laws.md` when you need distilled guidance from the user's Notion UX pages.
 - Read `references/review-rubric.md` when the user asks for a UX review, design critique, Figma review, frontend review, or acceptance criteria.
 - Source basis: the user's UX norms and Laws of UX by Jon Yablonski. This skill is a practical distillation, not a verbatim copy.
