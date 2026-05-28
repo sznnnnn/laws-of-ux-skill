@@ -1,0 +1,90 @@
+# UX Review Rubric
+
+Use this rubric when reviewing a UI, product flow, Figma design, frontend implementation, or prototype.
+
+## Review Output
+
+```markdown
+**Findings**
+- [P0/P1/P2/P3] Issue: impact. Recommendation.
+
+**Applied Laws**
+- Law: why it matters here.
+
+**Acceptance Checks**
+- Concrete condition to verify.
+```
+
+## Severity
+
+- P0: Blocks task completion, causes serious data loss, or creates a high-risk action with no recovery.
+- P1: Causes major confusion, high abandonment risk, or repeated errors in a core flow.
+- P2: Adds noticeable friction, cognitive load, or inconsistency but has a workaround.
+- P3: Polish, clarity, consistency, or edge-case improvement.
+
+## Review Passes
+
+### First-Use Clarity
+
+- Can a new user identify the page purpose within a few seconds?
+- Is the primary action obvious?
+- Are familiar patterns used where users expect them?
+- Are terms user-facing rather than implementation-facing?
+
+Relevant laws: Jakob's Law, Mental Model, Hick's Law, Cognitive Load.
+
+### Visual Grouping
+
+- Are related items closer to each other than unrelated items?
+- Are groups visually clear without extra labels?
+- Does responsive layout preserve relationships?
+- Are same-level actions styled consistently?
+
+Relevant laws: Proximity, Common Region, Similarity, Uniform Connectedness, Prägnanz.
+
+### Action Ergonomics
+
+- Are frequent and primary controls easy to reach and large enough?
+- Are destructive or high-cost actions separated from routine actions?
+- Are disabled, loading, error, and success states clear?
+- Does every action have feedback?
+
+Relevant laws: Fitts's Law, Doherty Threshold, Postel's Law, Peak-End Rule.
+
+### Decision Load
+
+- Are users asked to choose from too many options at once?
+- Are defaults, recommendations, filters, or grouping used to reduce comparison effort?
+- Is advanced complexity deferred until needed?
+- Does the interface preserve control while reducing effort?
+
+Relevant laws: Hick's Law, Choice Overload, Miller's Law, Tesler's Law, Occam's Razor.
+
+### Memory And Momentum
+
+- Does the user need to remember information from another screen?
+- Are progress, drafts, next steps, and completion states visible?
+- Does the flow protect partially completed work?
+- Does the ending leave the user confident about what happened?
+
+Relevant laws: Working Memory, Zeigarnik Effect, Goal-Gradient Effect, Peak-End Rule.
+
+### Innovation Cost
+
+- Which convention is being changed?
+- What benefit does the new pattern create after learning?
+- How often will users repeat the task?
+- Is there onboarding, gradual rollout, opt-out, or rollback?
+
+Relevant laws: Jakob's Law, Learning Curve, Cognitive Load, Paradox of the Active User.
+
+## Acceptance Checklist
+
+- Primary action is visible, reachable, and visually dominant.
+- Secondary actions are present but visually subordinate.
+- Labels, controls, helper text, and errors sit near the relevant object.
+- The UI avoids forcing users to compare too many choices at once.
+- Feedback appears immediately after every important action.
+- Users can recover from mistakes through undo, edit, retry, or saved drafts.
+- Responsive layouts preserve grouping and task order.
+- Novel interactions have a clear user benefit and support first-time learning.
