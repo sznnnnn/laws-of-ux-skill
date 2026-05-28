@@ -1,0 +1,7 @@
+interface:
+  display_name: "Laws of UX"
+  short_description: "Apply primary and secondary UX laws"
+  default_prompt: "Use $laws-of-ux-2 to review this interface and suggest concrete usability improvements."
+
+policy:
+  allow_implicit_invocation: true
