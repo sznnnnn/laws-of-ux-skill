@@ -1,11 +1,13 @@
 ---
 name: laws-of-ux-2
-description: Use when designing, reviewing, or refining UI/UX with Laws of UX principles; prioritizes Primary laws and uses Secondary laws to turn UX psychology into product decisions, interface critiques, frontend guidance, and acceptance checks.
+description: Use when designing, reviewing, or refining UI/UX with Laws of UX plus BuddyUp/v0-ai product design spec and design-governance checklists. Covers UX psychology, visual/interaction/copy/component consistency, accessibility, onboarding tours, and frontend implementation for 设计规范, 视觉统一, UI 审查, and acceptance checks.
 ---
 
 # Laws of UX
 
-Use this skill when the user asks to follow Laws of UX, improve usability, critique a UI, design a product flow, implement a frontend, or turn UX psychology principles into concrete interface choices.
+Use this skill when the user asks to follow Laws of UX, improve usability, critique a UI, design a product flow, implement a frontend, enforce **设计规范**, run **UI 审查**, align **视觉/交互一致性**, or turn UX psychology principles into concrete interface choices.
+
+For **BuddyUp / v0-ai** work, treat this skill as the unified design authority: UX laws supply rationale; `references/buddyup-product-design-spec.md` supplies tokens, components, flows, and tours; `references/design-governance-workflow.md` supplies the mandatory audit checklist.
 
 This skill distills Laws of UX into a working method. Do not recite the laws unless the user asks. Apply the smallest useful set of laws to the design decision in front of you.
 
@@ -31,23 +33,31 @@ Do not present disputed numeric thresholds as universal truth. Example:
 
 ## Core Workflow
 
-1. Identify the user's intent and the task type:
-   - New design: create structure, hierarchy, interaction states, and copy.
-   - Existing UI review: find friction, ambiguity, overload, and mismatch with user expectations.
-   - Frontend implementation: encode the UX decision in layout, component behavior, defaults, states, and validation.
-   - Product flow: reduce decision cost, improve recovery, and make progress visible.
-2. Choose 3-7 relevant laws from `references/laws-map.md`. Start with Primary laws, then add Secondary laws only where they sharpen the recommendation.
-3. Convert laws into interface decisions:
+1. Identify intent and task type:
+   - **New design**: structure, hierarchy, interaction states, copy.
+   - **UI review / 设计规范**: friction, inconsistency, spec drift, accessibility gaps.
+   - **Frontend implementation**: encode decisions in layout, components, defaults, states, validation.
+   - **Product flow**: reduce decision cost, improve recovery, show progress (问卷 → 匹配 → 工作台 → 文书).
+2. **If scope is BuddyUp / v0-ai** (or user mentions 设计规范): read `references/buddyup-product-design-spec.md` for tokens, components, shortcuts, tours; run `references/design-governance-workflow.md` five-domain audit.
+3. Choose **3–7 laws** from `references/laws-map.md` (Primary first, Secondary to sharpen).
+4. Convert laws + product spec into interface decisions:
    - What should be visible first?
    - What should be grouped, hidden, deferred, or removed?
    - What should be default, constrained, confirmed, reversible, or automated?
    - What state must the UI communicate before, during, and after action?
-4. Check the result against the UX acceptance checklist below.
-5. When delivering, explain decisions in product language, not academic psychology terms, unless the user asked for the theory.
-6. Mark each major recommendation with an evidence tag:
-   - `Validated`: broadly supported and low-regret.
-   - `Contextual`: depends on user segment/task environment.
-   - `Experimental`: should be validated with data or prototype tests.
+5. Check against the UX acceptance checklist below **and** product spec §10–12 (experience, onboarding) when applicable.
+6. Deliver in product language unless the user asked for theory.
+7. Tag each major recommendation: `Validated` | `Contextual` | `Experimental`.
+
+### Design Governance Mode (设计规范 / UI 审查)
+
+When the user wants alignment or audit (not only theory):
+
+1. Lock scope: component / page / flow + baseline file if ambiguous.
+2. Execute `references/design-governance-workflow.md` checklist in order.
+3. Classify findings P0–P3; fix P0 → P1 → P2 → P3.
+4. Prefer minimal diffs; remove redundant UI before adding; tokens only from `app/globals.css`.
+5. Report using `templates/buddyup-design-review-template.md` or the UX review output pattern below.
 
 ## UX Acceptance Checklist
 
@@ -156,11 +166,29 @@ Short design rationale in product language.
 - Do not simplify away critical professional controls for expert workflows.
 - Do not claim "best practice" if it conflicts with measured behavior in this product.
 
+## Trigger Phrases
+
+Invoke proactively when the user mentions:
+
+- Laws of UX / usability / heuristic review
+- **设计规范** / **设计规范整理** / **视觉统一** / **交互一致性**
+- **UI 审查** / UI 整理 / 信息层级优化 / **无障碍检查**
+- Align pages with product standards / shadcn / Notion-style UI
+
 ## References
 
-- Read `references/laws-map.md` when you need to select laws or explain the rationale.
-- Read `references/ux-thinking.md` when you need the user's overall philosophy for applying the laws.
-- Read `references/review-rubric.md` when the user asks for a UX review, design critique, Figma review, frontend review, or acceptance criteria.
-- Read `references/cn-open-ux-notes.md` when you need Chinese examples or popular explainer wording from open web style references.
-- Read `references/visual-evidence-guide.md` when recommendations should be supported by screenshots, flow diagrams, or metric visuals.
-- Source basis: the user's UX norms and Laws of UX by Jon Yablonski. This skill is a practical distillation, not a verbatim copy.
+| File | When to read |
+|------|----------------|
+| `references/laws-map.md` | Select laws or explain rationale |
+| `references/ux-thinking.md` | Overall philosophy for applying laws |
+| `references/review-rubric.md` | UX review severity and review passes |
+| `references/design-governance-workflow.md` | 设计规范 audit, P0–P3 workflow, PR self-check |
+| `references/buddyup-product-design-spec.md` | BuddyUp/v0-ai tokens, components, interaction, tours |
+| `references/cn-open-ux-notes.md` | Chinese examples and explainer framing |
+| `references/metrics-mapping.md` | Tie recommendations to measurable metrics |
+| `references/visual-evidence-guide.md` | Screenshots, flows, charts as evidence |
+| `templates/ux-review-template.md` | Generic UX review structure |
+| `templates/buddyup-design-review-template.md` | BuddyUp combined law + spec review |
+| `examples/ecommerce-checkout-review.md` | Sample severity-tagged review |
+
+Source basis: Laws of UX (Jon Yablonski), product design spec from BuddyUp/v0-ai codebase, and design-governance practice. Practical distillation, not verbatim copy.

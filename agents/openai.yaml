@@ -1,7 +1,7 @@
 interface:
-  display_name: "Laws of UX"
-  short_description: "Apply primary and secondary UX laws"
-  default_prompt: "Use $laws-of-ux-2 to review this interface and suggest concrete usability improvements."
+  display_name: "Laws of UX + Design Spec"
+  short_description: "UX laws, BuddyUp design spec, and governance checklists"
+  default_prompt: "Use $laws-of-ux-2 to review this interface against UX laws and the BuddyUp product design spec. List P0–P3 findings and concrete fixes."
 
 policy:
   allow_implicit_invocation: true

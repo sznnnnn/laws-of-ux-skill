@@ -85,6 +85,21 @@ Relevant laws: Working Memory, Zeigarnik Effect, Goal-Gradient Effect, Peak-End 
 
 Relevant laws: Jakob's Law, Learning Curve, Cognitive Load, Paradox of the Active User.
 
+## Product Spec Pass (BuddyUp / v0-ai)
+
+When reviewing this product, also verify against `references/buddyup-product-design-spec.md`:
+
+- Tokens and semantic colors come from `app/globals.css` (no stray hex).
+- Primary flow vocabulary is consistent: 问卷 → 匹配 → 工作台 → 文书.
+- List rows use `interactive-hover` / `interactive-active`; one primary CTA per screen.
+- ⌘K / ⌘B shortcuts respect input focus and `data-skip-workspace-cmdk`.
+- Irreversible actions use `AlertDialog`; empty states include a next action.
+- Icon-only controls have `aria-label`; clickable cards support Enter/Space.
+- Guest/local storage is perceptible when data is not cloud-synced.
+- New onboarding uses `data-tour` + centralized storage keys.
+
+Run `references/design-governance-workflow.md` for full five-domain audit and PR self-check.
+
 ## Acceptance Checklist
 
 - Primary action is visible, reachable, and visually dominant.
