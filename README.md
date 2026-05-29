@@ -35,6 +35,17 @@ Instead of treating UX laws as decorative citations, this skill turns them into 
 - Refines memory-related interpretation (avoids rigid 7 +/- 2 usage).
 - Adds a structured Chinese open UX notes reference for practical examples and user-facing language.
 
+## Visual Example
+
+![Checkout before](assets/images/checkout-before.svg)
+Before: shipping options and optional settings are mixed, increasing decision load.
+
+![Checkout after](assets/images/checkout-after.svg)
+After: recommended shipping is default, advanced options are collapsed, and primary CTA is emphasized.
+
+![Checkout funnel](assets/images/checkout-funnel.svg)
+Supporting chart: drop-off concentration at shipping step to validate optimization priority.
+
 ## Files
 
 - `SKILL.md`: trigger description and core workflow
@@ -46,4 +57,5 @@ Instead of treating UX laws as decorative citations, this skill turns them into 
 - `references/visual-evidence-guide.md`: when and how to attach screenshots/diagrams/charts as review evidence
 - `templates/ux-review-template.md`: reusable review input/output template
 - `examples/ecommerce-checkout-review.md`: concrete sample review with severity and acceptance checks
+- `assets/images/*`: visual assets used in README and examples
 - `agents/openai.yaml`: UI metadata for the Codex skill
