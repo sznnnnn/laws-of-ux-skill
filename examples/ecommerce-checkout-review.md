@@ -31,11 +31,11 @@
 
 ## Visual Evidence (Example Structure)
 
-![Figure 1 - Checkout before](/absolute/path/checkout-before.png)
+![Figure 1 - Checkout before](../assets/images/checkout-before.svg)
 Figure 1. Before: shipping options and optional tools are mixed, causing decision overload.
 
-![Figure 2 - Checkout after](/absolute/path/checkout-after.png)
+![Figure 2 - Checkout after](../assets/images/checkout-after.svg)
 Figure 2. After: recommended shipping shown by default, advanced options collapsed, sticky pay CTA added.
 
-![Figure 3 - Funnel by step](/absolute/path/checkout-funnel.png)
+![Figure 3 - Funnel by step](../assets/images/checkout-funnel.svg)
 Figure 3. Supporting metric view: drop-off by step to validate whether shipping-step changes improve completion.
