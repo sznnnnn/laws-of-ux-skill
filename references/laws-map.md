@@ -2,13 +2,21 @@
 
 Use this map to choose the smallest set of UX laws that actually matters for the current task.
 
+## How To Read This Map
+
+- `Strong`: robust and repeatedly useful across product contexts.
+- `Moderate`: useful but interpretation depends on task and audience.
+- `Heuristic`: practical framing tool; validate in your product context.
+
+Prefer a small set of laws with clear tradeoffs over citing many laws.
+
 ## Primary Laws
 
 These are the default laws to use when making core UX decisions.
 
 - Jakob's Law / 雅各布定律: Users expect interfaces to work like other products they already know. Use familiar patterns for navigation, forms, filters, commerce, account flows, and core domain interactions.
 - Fitts's Law / 菲茨法则: Larger, closer targets are easier and faster to acquire. Use it for button size, spacing, hit areas, touch targets, toolbar placement, and frequent controls.
-- Miller's Law / 记忆法则: Working memory is limited. Use chunking, visible references, summaries, previews, and grouped navigation instead of asking users to remember.
+- Miller's Law / 记忆法则 (Moderate): Working memory is limited. Use chunking, visible references, summaries, previews, and grouped navigation instead of asking users to remember.
 - Hick's Law / 希克定律: Decision time increases with the number and complexity of choices. Reduce, group, sequence, or recommend choices.
 - Postel's Law / 波斯特法则: Be flexible in what you accept and clear in what you return. Accept varied input formats where safe, normalize output, and provide forgiving validation.
 - Peak-End Rule / 峰终法则: Users judge experiences disproportionately by intense moments and endings. Design errors, waits, handoffs, completion, and final confirmations carefully.
@@ -16,6 +24,11 @@ These are the default laws to use when making core UX decisions.
 - Von Restorff Effect / 冯·雷斯托夫效应: Distinctive items are more likely to be noticed and remembered. Reserve strong contrast, color, motion, or placement for what truly matters.
 - Tesler's Law / 特斯勒定律: Every system has irreducible complexity. Decide whether complexity belongs with the user, the UI, automation, defaults, or a later step.
 - Doherty Threshold / 多尔蒂阈值: Fast feedback keeps users engaged. Respond immediately with local state, skeletons, progress, optimistic updates, or clear pending states.
+
+Note on memory limits:
+
+- Do not treat "7 +/- 2" as a strict UI rule.
+- For active task memory in interfaces, designing around roughly 3-5 chunks is often safer.
 
 ## Secondary Laws
 
@@ -41,6 +54,9 @@ Use these to diagnose, refine, and support the Primary laws.
 - Serial Position Effect / 序列位置效应: First and last items are remembered best. Put key starts, endings, and summaries where memory favors them.
 - Working Memory / 工作记忆: Users can hold only limited active information. Keep dependencies visible and avoid multi-step recall.
 - Zeigarnik Effect / 蔡格尼克效应: Incomplete tasks stay active in memory. Use progress, drafts, reminders, and clear continuation points.
+- Form Follows Function / 形式追随功能 (Heuristic): Let task purpose drive structure before decoration. Useful for preventing style-led complexity.
+- Inverted Pyramid / 倒金字塔结构 (Heuristic): Put high-value information first, then detail. Useful for content-heavy views and docs.
+- LATCH / 五架帽理论 (Heuristic): Organize information by location, alphabet, time, category, hierarchy when building navigation and information architecture.
 
 ## Decision Speed And Effort
 
@@ -105,3 +121,9 @@ Use these to diagnose, refine, and support the Primary laws.
 - Long onboarding: Goal-Gradient Effect, Zeigarnik Effect, Hick's Law, Paradox of the Active User.
 - Pretty but confusing interface: Aesthetic-Usability Effect, Cognitive Load, Mental Model.
 - Feature-heavy product: Pareto Principle, Tesler's Law, Occam's Razor, Progressive Disclosure.
+
+## Caution Cases
+
+- If this is a safety-critical, financial, or legal workflow, add explicit safeguards even if they increase friction.
+- If users are experts, excessive simplification can reduce trust and control.
+- If metrics conflict with a law-based suggestion, prioritize measured behavior and reframe the law as a hypothesis.

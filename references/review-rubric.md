@@ -13,6 +13,13 @@ Use this rubric when reviewing a UI, product flow, Figma design, frontend implem
 
 **Acceptance Checks**
 - Concrete condition to verify.
+
+**Evidence Tags**
+- Recommendation -> Validated / Contextual / Experimental
+
+**Metrics**
+- Primary metric(s):
+- Guardrail metric(s):
 ```
 
 ## Severity

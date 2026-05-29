@@ -16,6 +16,19 @@ Use the user's taxonomy:
 - Primary laws are the default decision frame. Use these first for core product, interaction, and usability calls.
 - Secondary laws are diagnostic and supporting tools. Use these to explain edge cases, refine hierarchy, reduce friction, or add nuance.
 
+## Evidence Boundaries
+
+When applying any law, explicitly separate:
+
+- Well-supported core claim (high confidence).
+- Context-dependent interpretation (medium confidence).
+- Product-specific inference you are making (assumption).
+
+Do not present disputed numeric thresholds as universal truth. Example:
+
+- Miller's Law should be treated as "working memory is limited; prefer chunking and recognition."
+- Avoid hard-coding "7 +/- 2" as a fixed design rule. Prefer "about 3-5 chunks is often safer for active memory tasks."
+
 ## Core Workflow
 
 1. Identify the user's intent and the task type:
@@ -31,6 +44,10 @@ Use the user's taxonomy:
    - What state must the UI communicate before, during, and after action?
 4. Check the result against the UX acceptance checklist below.
 5. When delivering, explain decisions in product language, not academic psychology terms, unless the user asked for the theory.
+6. Mark each major recommendation with an evidence tag:
+   - `Validated`: broadly supported and low-regret.
+   - `Contextual`: depends on user segment/task environment.
+   - `Experimental`: should be validated with data or prototype tests.
 
 ## UX Acceptance Checklist
 
@@ -107,6 +124,9 @@ For a UX review, use:
 
 **Acceptance Checks**
 - What to verify in implementation.
+
+**Evidence Tags**
+- Recommendation -> Validated / Contextual / Experimental
 ```
 
 For a design or implementation task, use:
@@ -124,11 +144,23 @@ Short design rationale in product language.
 **Verification**
 - Desktop/mobile visual check
 - Interaction and state check
+
+**Evidence Tags**
+- Decision -> Validated / Contextual / Experimental
 ```
+
+## Do Not Misapply The Laws
+
+- Do not use aesthetics to justify weak IA or unclear interaction.
+- Do not over-prioritize familiarity when domain risk requires explicit confirmation.
+- Do not simplify away critical professional controls for expert workflows.
+- Do not claim "best practice" if it conflicts with measured behavior in this product.
 
 ## References
 
 - Read `references/laws-map.md` when you need to select laws or explain the rationale.
 - Read `references/ux-thinking.md` when you need the user's overall philosophy for applying the laws.
 - Read `references/review-rubric.md` when the user asks for a UX review, design critique, Figma review, frontend review, or acceptance criteria.
+- Read `references/cn-open-ux-notes.md` when you need Chinese examples or popular explainer wording from open web style references.
+- Read `references/visual-evidence-guide.md` when recommendations should be supported by screenshots, flow diagrams, or metric visuals.
 - Source basis: the user's UX norms and Laws of UX by Jon Yablonski. This skill is a practical distillation, not a verbatim copy.

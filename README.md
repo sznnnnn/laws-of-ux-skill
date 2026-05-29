@@ -27,9 +27,23 @@ Instead of treating UX laws as decorative citations, this skill turns them into 
 - What feedback should appear before, during, and after user action?
 - Does the design reduce cognitive load while preserving user control?
 
+## What's Optimized In This Version
+
+- Adds evidence boundaries to avoid over-claiming context-heavy UX rules.
+- Adds `Validated / Contextual / Experimental` tags for recommendation confidence.
+- Adds "do not misapply" guardrails to prevent law misuse.
+- Refines memory-related interpretation (avoids rigid 7 +/- 2 usage).
+- Adds a structured Chinese open UX notes reference for practical examples and user-facing language.
+
 ## Files
 
 - `SKILL.md`: trigger description and core workflow
 - `references/laws-map.md`: Primary and Secondary UX laws map
 - `references/ux-thinking.md`: overall UX thinking frame
+- `references/review-rubric.md`: severity model and acceptance-oriented review output
+- `references/cn-open-ux-notes.md`: Chinese open-web style examples mapped to actionable UX decisions
+- `references/metrics-mapping.md`: map UX laws to measurable product metrics
+- `references/visual-evidence-guide.md`: when and how to attach screenshots/diagrams/charts as review evidence
+- `templates/ux-review-template.md`: reusable review input/output template
+- `examples/ecommerce-checkout-review.md`: concrete sample review with severity and acceptance checks
 - `agents/openai.yaml`: UI metadata for the Codex skill
