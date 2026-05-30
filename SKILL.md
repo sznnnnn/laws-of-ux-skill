@@ -1,6 +1,6 @@
 ---
 name: laws-of-ux-2
-description: Use when designing, reviewing, or refining UI/UX with Laws of UX plus BuddyUp/v0-ai product design spec and design-governance checklists. Covers UX psychology, visual/interaction/copy/component consistency, accessibility, onboarding tours, and frontend implementation for 设计规范, 视觉统一, UI 审查, and acceptance checks.
+description: Use when designing, reviewing, or refining UI/UX with Laws of UX plus BuddyUp/v0-ai product design spec and design-governance checklists. Covers UX psychology, visual/interaction/copy/component consistency, accessibility, onboarding tours, frontend implementation, P0-P3 findings, Keep/Fix/Quick Wins, metric plans, visual evidence, 设计规范, 视觉统一, UI 审查, and acceptance checks. Trigger for UX review, UI critique, frontend review, Figma review, usability audit, product flow design, onboarding, checkout, dashboard, settings, form, IA, interaction states, cognitive load, design acceptance, and "is this easy to use?" tasks.
 ---
 
 # Laws of UX
@@ -12,6 +12,8 @@ For **BuddyUp / v0-ai** work, treat this skill as the unified design authority: 
 This skill distills Laws of UX into a working method. Do not recite the laws unless the user asks. Apply the smallest useful set of laws to the design decision in front of you.
 
 Treat Laws of UX as a systematic UX thinking tool: a collection of psychological and behavioral design principles for understanding user perception, cognition, attention, memory, motivation, and behavioral responses in interfaces. The goal is to turn experience into reusable product judgment.
+
+Act as a practical UX reviewer and product designer, not a psychology lecturer. The output should help the user change a screen, ship a safer flow, or make an implementation pass.
 
 Use the user's taxonomy:
 
@@ -58,6 +60,32 @@ When the user wants alignment or audit (not only theory):
 3. Classify findings P0–P3; fix P0 → P1 → P2 → P3.
 4. Prefer minimal diffs; remove redundant UI before adding; tokens only from `app/globals.css`.
 5. Report using `templates/buddyup-design-review-template.md` or the UX review output pattern below.
+
+## Context Protocol
+
+Before judging a design, gather or infer the minimum useful context:
+
+- User task: what the user is trying to finish.
+- Surface: page, flow, device, and state under review.
+- Goal: conversion, comprehension, speed, trust, retention, safety, or error reduction.
+- Constraints: engineering, compliance, brand, accessibility, data availability, or expert-user needs.
+- Evidence: screenshots, prototype, analytics, recordings, support tickets, user quotes, or implementation details.
+
+If context is missing and the task is broad, proceed with clearly labeled assumptions instead of blocking on questions. Ask only when the missing context would change the recommendation materially.
+
+For a specific existing product, company, law, regulation, metric benchmark, or current platform behavior that may have changed, verify with current sources before making factual claims.
+
+## Fallback For Vague Briefs
+
+When the user says only "make it better", "review this", "optimize UX", or "好不好用", use a fast default audit:
+
+1. State 2-4 assumptions about user, task, and device.
+2. Run the six review passes in `references/review-rubric.md`.
+3. Return no more than 5 findings, sorted by severity.
+4. Include 3 Quick Wins that can be implemented without redesigning the whole product.
+5. Add the one metric most likely to show whether the recommendation worked.
+
+Do not turn vague briefs into long theory dumps. Make the first answer usable.
 
 ## UX Acceptance Checklist
 
@@ -126,8 +154,19 @@ Relevant laws: Tesler's Law, Goal-Gradient Effect, Cognitive Load, Zeigarnik Eff
 For a UX review, use:
 
 ```markdown
+**Verdict**
+- Score: X/10
+- Release risk: low / medium / high
+- Main UX issue: one sentence.
+
+**Keep**
+- What already works and should not be broken.
+
 **Findings**
 - [Severity] Issue: impact. Recommendation.
+
+**Quick Wins**
+- [ ] Small fix with high leverage.
 
 **Applied Laws**
 - Law name: why it matters here.
@@ -137,6 +176,13 @@ For a UX review, use:
 
 **Evidence Tags**
 - Recommendation -> Validated / Contextual / Experimental
+
+**Metrics**
+- Primary metric(s):
+- Guardrail metric(s):
+
+**Visual Evidence**
+- Before/after/screenshot/flow/chart references when available.
 ```
 
 For a design or implementation task, use:

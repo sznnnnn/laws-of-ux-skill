@@ -6,6 +6,17 @@
 - Task: complete payment
 - Pain points: high abandonment on shipping step
 
+## Verdict
+
+- Score: 6.8/10
+- Release risk: medium
+- Main UX issue: the shipping step asks users to compare too many options before they can continue.
+
+## Keep
+
+- The checkout sequence follows a familiar cart -> shipping -> payment -> confirmation order.
+- Required address and payment fields are separated enough to preserve task structure.
+
 ## Findings
 
 - [P1] Too many shipping options shown at once creates decision paralysis.
@@ -23,11 +34,24 @@
   - Laws: Tesler's Law, Cognitive Load.
   - Tag: `Contextual`
 
+## Quick Wins
+
+- [ ] Default to the recommended shipping method and move alternatives behind "view all methods."
+- [ ] Add a sticky mobile pay CTA once required fields are valid.
+- [ ] Collapse coupon, points, and invoice controls into one optional section.
+
 ## Acceptance Checks
 
 - Checkout completion rate increases without higher refund/dispute rates.
 - Median time from shipping step to payment confirmation decreases.
 - Repeated tap rate on pay CTA decreases.
+- Users can still switch shipping methods after accepting the recommendation.
+- Sticky CTA remains visible and non-overlapping at 390px mobile width.
+
+## Metrics
+
+- Primary: shipping-step completion rate, checkout completion rate, median time to payment confirmation.
+- Guardrail: refund/dispute rate, support tickets about wrong shipping method, coupon usage error rate.
 
 ## Visual Evidence (Example Structure)
 

@@ -5,8 +5,21 @@ Use this rubric when reviewing a UI, product flow, Figma design, frontend implem
 ## Review Output
 
 ```markdown
+**Verdict**
+- Score: X/10
+- Release risk: low / medium / high
+- Main UX issue: one sentence.
+
+**Keep**
+- Do not break these working patterns.
+
 **Findings**
 - [P0/P1/P2/P3] Issue: impact. Recommendation.
+
+**Quick Wins**
+- [ ] Highest leverage small fix.
+- [ ] Second fix.
+- [ ] Third fix.
 
 **Applied Laws**
 - Law: why it matters here.
@@ -20,6 +33,9 @@ Use this rubric when reviewing a UI, product flow, Figma design, frontend implem
 **Metrics**
 - Primary metric(s):
 - Guardrail metric(s):
+
+**Visual Evidence**
+- Screenshot, diagram, funnel, or flow reference if available.
 ```
 
 ## Severity
@@ -28,6 +44,31 @@ Use this rubric when reviewing a UI, product flow, Figma design, frontend implem
 - P1: Causes major confusion, high abandonment risk, or repeated errors in a core flow.
 - P2: Adds noticeable friction, cognitive load, or inconsistency but has a workaround.
 - P3: Polish, clarity, consistency, or edge-case improvement.
+
+## Score Guide
+
+Use scoring only when it helps compare options or communicate release risk.
+
+- 9-10: Clear task path, strong hierarchy, low error risk, polished states, and measurable confidence.
+- 7-8: Usable and mostly clear, with a few fixable friction points.
+- 5-6: Understandable but effortful; users must pause, compare, remember, or recover too often.
+- 3-4: Core flow is unreliable or confusing for many users.
+- 1-2: Users are likely blocked, misled, or exposed to serious unrecoverable errors.
+
+Score dimensions:
+
+- Task clarity: can users tell what this screen is for and what to do next?
+- Decision load: are choices grouped, sequenced, defaulted, or explained?
+- Action ergonomics: are primary actions reachable, stateful, and recoverable?
+- Feedback quality: does the interface respond clearly before, during, and after action?
+- Fit to expectations: does the design match familiar domain and platform patterns?
+- Craft and responsiveness: does layout survive realistic desktop/mobile sizes?
+
+## Keep / Fix / Quick Wins
+
+- `Keep`: name the patterns that already reduce effort or build trust. This prevents redesigns from destroying useful existing behavior.
+- `Fix`: list material problems sorted by P0-P3 severity, with user impact and implementation direction.
+- `Quick Wins`: choose small, shippable changes with high leverage; avoid vague items like "improve visual hierarchy."
 
 ## Review Passes
 
@@ -99,6 +140,15 @@ When reviewing this product, also verify against `references/buddyup-product-des
 - New onboarding uses `data-tour` + centralized storage keys.
 
 Run `references/design-governance-workflow.md` for full five-domain audit and PR self-check.
+
+### Visual Evidence
+
+- Is there a screenshot or prototype state for the issue?
+- Can the finding be shown as before/after, flow, funnel, or annotated region?
+- Does the visual evidence support the recommendation rather than decorate it?
+- Are captions specific about the user impact?
+
+Relevant laws: Selective Attention, Von Restorff Effect, Proximity, Common Region.
 
 ## Acceptance Checklist
 
