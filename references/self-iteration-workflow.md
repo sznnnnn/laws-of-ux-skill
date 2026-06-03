@@ -132,6 +132,68 @@ During repo maintenance, scan `.learnings/` and promote mature items:
 
 Promote only when the pattern is stable enough to help future work. Keep experimental ideas in `.learnings/` until they repeat.
 
+## Daily UX Research Intake
+
+Use this loop for proactive self-iteration, especially from a daily automation.
+
+### Search Targets
+
+Each run should gather a small, high-signal set of fresh or useful material:
+
+- 1 UX principle, research note, or psychology concept that can improve product judgment.
+- 1 product/interface case study, teardown, or release note with concrete UI decisions.
+- 1 visual or interaction pattern worth reusing, avoiding, or testing.
+- Optional: 1 counterexample where a common UX law was misused or did not fit the context.
+
+Prefer primary or durable sources when possible: product changelogs, design system docs, official accessibility guidance, Nielsen Norman Group, Baymard, W3C/WCAG, platform HIG/Material guidance, public postmortems, and well-documented case studies. For trend-driven examples, include the date and source.
+
+### Daily Output
+
+Append a short entry to `.learnings/LEARNINGS.md` using this shape:
+
+```markdown
+## [LRN-YYYYMMDD-XXX] insight
+
+**Logged**: ISO-8601 timestamp
+**Priority**: low | medium | high
+**Status**: pending
+**Area**: ux-law | visual-design | interaction | accessibility | copy | governance | implementation
+
+### Summary
+One useful UX lesson from today's research.
+
+### Details
+- Source:
+- Case:
+- What changed in product judgment:
+- Where this skill should apply it:
+
+### Suggested Action
+Keep, test in a future review, or promote into a specific file.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md
+- Tags: daily-intake, ux-research
+- Evidence: Validated | Contextual | Experimental
+
+---
+```
+
+Keep the daily note compact. Do not dump full articles. Save the source link, the product lesson, and the exact way it should change future UX reviews.
+
+### Weekly Promotion
+
+Once a week, scan the daily entries:
+
+1. Promote repeated lessons into `SKILL.md` if they change default behavior.
+2. Add richer reusable knowledge to `references/`.
+3. Add a worked teardown to `examples/` if a case is especially clear.
+4. Update `templates/` if the research implies a better review output.
+5. Mark promoted learning entries as `Status: promoted`.
+
+Do not promote every daily item. The skill should get sharper, not heavier.
+
 ## Quick Self-Review Questions
 
 At the end of a substantial review or implementation, ask:

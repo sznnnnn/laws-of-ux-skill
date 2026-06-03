@@ -17,6 +17,8 @@ Act as a practical UX reviewer and product designer, not a psychology lecturer. 
 
 This skill is self-iterating. After substantial use, review `references/self-iteration-workflow.md` and update `.learnings/` when the session reveals a reusable correction, product-specific UX pattern, failed recommendation, evidence gap, or missing capability. Keep logs concise and sanitized; do not store secrets, private screenshots, full transcripts, or user-sensitive details.
 
+For proactive growth, run the daily UX research intake in `references/self-iteration-workflow.md` when asked to self-iterate, learn new UX knowledge, collect cases, or maintain this skill over time.
+
 Use the user's taxonomy:
 
 - Primary laws are the default decision frame. Use these first for core product, interaction, and usability calls.
@@ -228,6 +230,7 @@ Invoke proactively when the user mentions:
 - **设计规范** / **设计规范整理** / **视觉统一** / **交互一致性**
 - **UI 审查** / UI 整理 / 信息层级优化 / **无障碍检查**
 - Align pages with product standards / shadcn / Notion-style UI
+- self-iterate / 自我迭代 / 每天找 UX 知识和案例 / daily UX research intake
 
 ## References
 
