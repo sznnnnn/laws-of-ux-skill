@@ -245,6 +245,7 @@ Invoke proactively when the user mentions:
 | `references/metrics-mapping.md` | Tie recommendations to measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots, flows, charts as evidence |
 | `references/self-iteration-workflow.md` | How this skill records learnings, errors, feature gaps, and promotion candidates |
+| `references/research-sources.md` | Priority sources for daily UX research intake |
 | `templates/ux-review-template.md` | Generic UX review structure |
 | `templates/buddyup-design-review-template.md` | BuddyUp combined law + spec review |
 | `.learnings/LEARNINGS.md` | Running log of reusable UX/design-governance learnings |

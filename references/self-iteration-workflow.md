@@ -136,6 +136,8 @@ Promote only when the pattern is stable enough to help future work. Keep experim
 
 Use this loop for proactive self-iteration, especially from a daily automation.
 
+Before searching broadly, read `references/research-sources.md` and prioritize the user-specified learning sources listed there. If a source is private or inaccessible, do not infer its private contents; use the source title as a theme and supplement with public, durable references.
+
 ### Search Targets
 
 Each run should gather a small, high-signal set of fresh or useful material:
