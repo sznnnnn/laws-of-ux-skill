@@ -15,6 +15,8 @@ Treat Laws of UX as a systematic UX thinking tool: a collection of psychological
 
 Act as a practical UX reviewer and product designer, not a psychology lecturer. The output should help the user change a screen, ship a safer flow, or make an implementation pass.
 
+This skill is self-iterating. After substantial use, review `references/self-iteration-workflow.md` and update `.learnings/` when the session reveals a reusable correction, product-specific UX pattern, failed recommendation, evidence gap, or missing capability. Keep logs concise and sanitized; do not store secrets, private screenshots, full transcripts, or user-sensitive details.
+
 Use the user's taxonomy:
 
 - Primary laws are the default decision frame. Use these first for core product, interaction, and usability calls.
@@ -50,6 +52,12 @@ Do not present disputed numeric thresholds as universal truth. Example:
 5. Check against the UX acceptance checklist below **and** product spec §10–12 (experience, onboarding) when applicable.
 6. Deliver in product language unless the user asked for theory.
 7. Tag each major recommendation: `Validated` | `Contextual` | `Experimental`.
+8. For meaningful design work, run the self-iteration pass:
+   - Did any UX claim prove wrong, too broad, or unsupported?
+   - Did the product context reveal a reusable design pattern?
+   - Did visual/implementation verification expose a recurring failure mode?
+   - Did the user request a capability the skill does not yet support?
+   Log the result using `.learnings/LEARNINGS.md`, `.learnings/ERRORS.md`, or `.learnings/FEATURE_REQUESTS.md` as described in `references/self-iteration-workflow.md`.
 
 ### Design Governance Mode (设计规范 / UI 审查)
 
@@ -233,8 +241,12 @@ Invoke proactively when the user mentions:
 | `references/cn-open-ux-notes.md` | Chinese examples and explainer framing |
 | `references/metrics-mapping.md` | Tie recommendations to measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots, flows, charts as evidence |
+| `references/self-iteration-workflow.md` | How this skill records learnings, errors, feature gaps, and promotion candidates |
 | `templates/ux-review-template.md` | Generic UX review structure |
 | `templates/buddyup-design-review-template.md` | BuddyUp combined law + spec review |
+| `.learnings/LEARNINGS.md` | Running log of reusable UX/design-governance learnings |
+| `.learnings/ERRORS.md` | Running log of failed checks, broken assumptions, and tool/verification errors |
+| `.learnings/FEATURE_REQUESTS.md` | Running log of requested capabilities or missing templates |
 | `examples/ecommerce-checkout-review.md` | Sample severity-tagged review |
 
 Source basis: Laws of UX (Jon Yablonski), product design spec from BuddyUp/v0-ai codebase, and design-governance practice. Practical distillation, not verbatim copy.

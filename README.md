@@ -94,11 +94,23 @@ Supporting chart: drop-off concentration at shipping step to validate optimizati
 | `references/cn-open-ux-notes.md` | Chinese examples and framing |
 | `references/metrics-mapping.md` | Laws -> measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots and diagram evidence |
+| `references/self-iteration-workflow.md` | How the skill records and promotes reusable learnings |
 | `templates/ux-review-template.md` | Generic review template |
 | `templates/buddyup-design-review-template.md` | Law + spec combined template |
 | `examples/ecommerce-checkout-review.md` | Sample checkout review |
+| `.learnings/*` | Local self-iteration logs for learnings, errors, and feature requests |
 | `assets/images/*` | Visual examples for README/reviews |
 | `agents/openai.yaml` | Codex skill UI metadata |
+
+## Self-Iteration
+
+This skill ships with a lightweight self-iteration system:
+
+1. Use the skill on real design, review, or frontend work.
+2. When a reusable correction, product pattern, verification failure, or missing capability appears, log it in `.learnings/`.
+3. During maintenance, promote repeated lessons into `SKILL.md`, `references/`, `templates/`, or `examples/`.
+
+The loop is intentionally local-first and low overhead: short logs first, durable skill changes only when a pattern repeats.
 
 ## Install
 
