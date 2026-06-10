@@ -62,3 +62,35 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 - Evidence: Validated
 
 ---
+
+## [LRN-20260610-001] insight
+
+**Logged**: 2026-06-10T12:22:58Z
+**Priority**: high
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Agentic and long-running interfaces should pause at meaningful choice points, not only report that work is happening.
+
+### Details
+- Source: Google UX Design Professional Certificate public Coursera page, accessed 2026-06-10, frames UX as empathize, define, ideate, prototype, test, and iteration around user pain points: https://www.coursera.org/professional-certificates/google-ux-design
+- Source: W3C WCAG 2.2 Understanding SC 4.1.3 Status Messages, accessed 2026-06-10, requires important non-focus status changes to be programmatically determinable without unnecessarily interrupting work: https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html
+- Source: Nielsen Norman Group, Response Times: The 3 Important Limits, accessed 2026-06-10, recommends feedback and interruptibility for operations that exceed attention limits: https://www.nngroup.com/articles/response-times-3-important-limits/
+- Source: Morae: Proactively Pausing UI Agents for User Choices, ACM UIST 2025 / arXiv, accessed 2026-06-10, shows a mixed-initiative UI agent pausing during real web tasks so blind and low-vision users can choose among meaningful alternatives: https://arxiv.org/abs/2508.21456
+- Case: In Morae's shopping example, an agent asked to buy the cheapest sparkling water picked one automatically, missing user-relevant alternatives such as flavor and rating; the improved pattern pauses when options are materially equivalent or preference-sensitive.
+- Pattern: For AI agents, imports, checkout, search, matching, or setup flows, classify status moments into "inform only" versus "needs user choice"; use accessible status messages for the former and explicit pause/resume choice surfaces for the latter.
+- Counterexample: Treating every intermediate uncertainty as either silent automation or a blocking modal can both fail: silent automation reduces agency, while excessive confirmation destroys flow.
+- What changed in product judgment: UX reviews should evaluate automation by decision rights, not just task completion speed.
+- Where this skill should apply it: agent-memory tools, browser extensions, AI generation, recommendation/matching flows, checkout substitutions, and any interface that acts on behalf of users.
+
+### Suggested Action
+Keep as a daily research note; promote into `SKILL.md` if future agentic UX reviews repeat weak decision-rights or pause/resume handling.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, agentic-ux, accessibility, status-messages, user-agency
+- Evidence: Contextual
+
+---
