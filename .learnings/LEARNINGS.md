@@ -94,3 +94,34 @@ Keep as a daily research note; promote into `SKILL.md` if future agentic UX revi
 - Evidence: Contextual
 
 ---
+
+## [LRN-20260614-001] insight
+
+**Logged**: 2026-06-14T01:54:48Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Progressive disclosure should preserve orientation and decision context, not merely hide complexity.
+
+### Details
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Disclosure Controls, accessed 2026-06-14, frames disclosure controls as reveal/hide mechanisms for related information or functionality: https://developer.apple.com/design/human-interface-guidelines/disclosure-controls
+- Source: Google UX Design Certificate public Google page, accessed 2026-06-14, emphasizes user-centered foundations, wireframes/prototypes, usability studies, and test-and-iterate practice: https://grow.google/certificates/ux-design/
+- Source: NN/g, Few Guesses, More Success: 4 Principles to Reduce Cognitive Load in Forms, accessed 2026-06-14, recommends showing only what is relevant at the current step while making requirements and progress transparent: https://www.nngroup.com/articles/4-principles-reduce-cognitive-load/
+- Case: Shopify Polaris IA uses "one home and many doors" for Help Center content: shipping help lives in one canonical place, but contextual links from admin settings give merchants access when the extra context becomes relevant: https://polaris-react.shopify.com/foundations/information-architecture
+- Pattern: Keep the primary path visible, reveal secondary details near the object they explain, use descriptive icon+text triggers, and maintain breadcrumbs/progress/context so the user knows where the hidden detail fits.
+- Counterexample: GitHub Primer cautions that disclosure should be used sparingly and should not disorient the user's initial focus; GitLab Pajamas warns that three or more nested disclosure levels can signal that the feature itself is too complex: https://primer.style/product/ui-patterns/progressive-disclosure/ and https://design.gitlab.com/patterns/progressive-disclosure/
+- What changed in product judgment: In reviews, collapses, accordions, "more" menus, and step flows should be judged by orientation and recoverability, not by screen cleanliness alone.
+- Where this skill should apply it: long forms, settings, filters, dashboards, onboarding, help links, AI/agent setup, and dense product-admin workflows.
+
+### Suggested Action
+Keep as a daily research note; promote if future reviews repeatedly find hidden controls, nested accordions, or "clean" screens that lose user context.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, progressive-disclosure, information-architecture, apple-hig, google-ux
+- Evidence: Validated
+
+---
