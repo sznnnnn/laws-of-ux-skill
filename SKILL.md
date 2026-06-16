@@ -9,6 +9,8 @@ Use this skill when the user asks to follow Laws of UX, improve usability, criti
 
 For **BuddyUp / v0-ai** work, treat this skill as the unified design authority: UX laws supply rationale; `references/buddyup-product-design-spec.md` supplies tokens, components, flows, and tours; `references/design-governance-workflow.md` supplies the mandatory audit checklist.
 
+For agentic, AI-generation, import, sync, indexing, checkout-substitution, recommendation, or other long-running flows, read `references/agentic-long-task-ux.md`. Review the flow by decision rights: what the system may do automatically, what it must merely report, and where it should pause for user choice.
+
 This skill distills Laws of UX into a working method. Do not recite the laws unless the user asks. Apply the smallest useful set of laws to the design decision in front of you.
 
 Treat Laws of UX as a systematic UX thinking tool: a collection of psychological and behavioral design principles for understanding user perception, cognition, attention, memory, motivation, and behavioral responses in interfaces. The goal is to turn experience into reusable product judgment.
@@ -52,6 +54,7 @@ Do not present disputed numeric thresholds as universal truth. Example:
    - What should be default, constrained, confirmed, reversible, or automated?
    - What state must the UI communicate before, during, and after action?
 5. Check against the UX acceptance checklist below **and** product spec §10–12 (experience, onboarding) when applicable.
+   - For AI/agentic or long-running flows, also run `references/agentic-long-task-ux.md`.
 6. Deliver in product language unless the user asked for theory.
 7. Tag each major recommendation: `Validated` | `Contextual` | `Experimental`.
 8. For meaningful design work, run the self-iteration pass:
@@ -107,6 +110,8 @@ Before marking a UI or flow complete, verify:
 - The screen does not ask users to compare, remember, or decide among too many options at once.
 - Defaults are helpful, safe, and easy to override.
 - Feedback appears immediately after user action: loading, success, error, empty, disabled, and partial states are designed.
+- Long-running operations show useful progress, allow safe pause/cancel/resume when feasible, and preserve the user's place.
+- Agentic or automated decisions expose what was decided, what remains uncertain, and where user confirmation is required.
 - Destructive or high-cost actions are prevented, confirmed, or reversible.
 - The interface uses familiar patterns for the domain unless a clear product reason justifies novelty.
 - Important text is concise, concrete, and close to the thing it explains.
@@ -129,6 +134,7 @@ Relevant laws: Hick's Law, Miller's Law, Tesler's Law, Jakob's Law, Choice Overl
 - Use optimistic UI only when failure is low-risk and recovery is clear.
 - Make undo, retry, edit, and backtracking obvious for consequential actions.
 - Prefer guardrails over blame-heavy error messages.
+- For long-running work, distinguish status-only moments from user-choice moments; make pause, cancel, resume, and safe background continuation explicit when useful.
 
 Relevant laws: Doherty Threshold, Peak-End Rule, Postel's Law, Zeigarnik Effect, Flow, Parkinson's Law.
 
@@ -156,8 +162,18 @@ Relevant laws: Jakob's Law, Mental Models, Serial Position Effect, Proximity, Si
 - Break long flows into named steps with visible progress.
 - Use summaries and previews before submission.
 - Preserve user input when validation fails.
+- Progressive disclosure should preserve orientation: hidden content needs clear triggers, nearby context, and a visible path back.
 
 Relevant laws: Tesler's Law, Goal-Gradient Effect, Cognitive Load, Zeigarnik Effect, Pareto Principle, Occam's Razor.
+
+### Protect User Agency In Agentic Flows
+
+- Define the agent's decision rights before judging speed or automation quality.
+- Use accessible status messages for non-blocking progress updates.
+- Pause at meaningful, preference-sensitive, high-cost, or materially ambiguous choices.
+- Avoid both extremes: silent automation that makes hidden decisions, and excessive confirmations that destroy flow.
+
+Relevant laws: Postel's Law, Doherty Threshold, Zeigarnik Effect, Peak-End Rule, Goal-Gradient Effect, Mental Models.
 
 ## Output Patterns
 
@@ -241,6 +257,7 @@ Invoke proactively when the user mentions:
 | `references/review-rubric.md` | UX review severity and review passes |
 | `references/design-governance-workflow.md` | 设计规范 audit, P0–P3 workflow, PR self-check |
 | `references/buddyup-product-design-spec.md` | BuddyUp/v0-ai tokens, components, interaction, tours |
+| `references/agentic-long-task-ux.md` | Agentic, AI-generation, import, sync, and long-running flow review |
 | `references/cn-open-ux-notes.md` | Chinese examples and explainer framing |
 | `references/metrics-mapping.md` | Tie recommendations to measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots, flows, charts as evidence |

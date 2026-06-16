@@ -99,6 +99,18 @@ Relevant laws: Proximity, Common Region, Similarity, Uniform Connectedness, Prä
 
 Relevant laws: Fitts's Law, Doherty Threshold, Postel's Law, Peak-End Rule.
 
+### Agentic And Long-Task Control
+
+- Does the interface distinguish automatic actions, status-only updates, and moments that require user choice?
+- Are AI, import, sync, generation, or background tasks specific about what is happening and what changed?
+- Can the user pause, cancel, resume, retry, inspect, or correct the result when meaningful?
+- Are preference-sensitive, high-cost, or low-confidence decisions staged for approval instead of silently applied?
+- Are status updates accessible without forcing focus changes?
+
+Relevant laws: Doherty Threshold, Postel's Law, Zeigarnik Effect, Peak-End Rule, Goal-Gradient Effect.
+
+Reference: `references/agentic-long-task-ux.md`.
+
 ### Decision Load
 
 - Are users asked to choose from too many options at once?
@@ -157,6 +169,8 @@ Relevant laws: Selective Attention, Von Restorff Effect, Proximity, Common Regio
 - Labels, controls, helper text, and errors sit near the relevant object.
 - The UI avoids forcing users to compare too many choices at once.
 - Feedback appears immediately after every important action.
+- Long-running actions expose progress, preserve place, and provide pause/cancel/resume or recovery when feasible.
+- Agentic decisions clarify what was automated, what needs review, and what can be corrected.
 - Users can recover from mistakes through undo, edit, retry, or saved drafts.
 - Responsive layouts preserve grouping and task order.
 - Novel interactions have a clear user benefit and support first-time learning.

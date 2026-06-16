@@ -51,6 +51,7 @@ Use this template when running a structured UX review.
 
 **Acceptance Checks**
 - Check: expected behavior and pass condition
+- Long task / agentic check if relevant: progress, pause/cancel/resume, recovery, and user decision boundary
 
 **Evidence Tags**
 - Recommendation -> Validated / Contextual / Experimental

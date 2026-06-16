@@ -36,7 +36,7 @@ Keep future self-iteration additions small until a pattern repeats in real desig
 
 **Logged**: 2026-06-03T01:11:44Z
 **Priority**: medium
-**Status**: pending
+**Status**: promoted
 **Area**: interaction
 
 ### Summary
@@ -53,7 +53,7 @@ Progress feedback should move from "the app is busy" to "the user can judge, wai
 - Where this skill should apply it: imports, file conversion, AI generation, onboarding setup, search/indexing, background sync, and any flow where waiting blocks the next user decision.
 
 ### Suggested Action
-Keep as a daily research note; promote into the acceptance checklist if future reviews repeat weak loading/progress states.
+Promoted into `SKILL.md`, `references/review-rubric.md`, `references/design-governance-workflow.md`, and `references/agentic-long-task-ux.md` as long-task progress and recovery checks.
 
 ### Metadata
 - Source: research
@@ -67,7 +67,7 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 
 **Logged**: 2026-06-10T12:22:58Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: interaction
 
 ### Summary
@@ -85,7 +85,7 @@ Agentic and long-running interfaces should pause at meaningful choice points, no
 - Where this skill should apply it: agent-memory tools, browser extensions, AI generation, recommendation/matching flows, checkout substitutions, and any interface that acts on behalf of users.
 
 ### Suggested Action
-Keep as a daily research note; promote into `SKILL.md` if future agentic UX reviews repeat weak decision-rights or pause/resume handling.
+Promoted into `SKILL.md`, `references/review-rubric.md`, `references/design-governance-workflow.md`, and `references/agentic-long-task-ux.md` as a decision-rights model for agentic flows.
 
 ### Metadata
 - Source: research

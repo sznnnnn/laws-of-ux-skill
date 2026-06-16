@@ -43,6 +43,8 @@ If ambiguous, ask for one preferred baseline screen or file path.
 
 - [ ] Click targets are clear and predictable.
 - [ ] Hover/focus/disabled/loading states exist for interactive controls.
+- [ ] Long-running actions expose specific progress, completion, partial failure, and recovery states.
+- [ ] Agentic or automated flows separate routine automation from preference-sensitive pause/confirm moments.
 - [ ] Critical actions require confirmation when destructive (`AlertDialog`).
 - [ ] Sticky/fixed bars do not cover key content or safe areas.
 - [ ] Empty states provide next action, not only description.
@@ -72,6 +74,7 @@ If ambiguous, ask for one preferred baseline screen or file path.
 - [ ] Decorative icons use `aria-hidden` when appropriate.
 - [ ] Keyboard navigation works for major path actions (`Enter`/`Space` on `role="button"`).
 - [ ] State is not conveyed by color only.
+- [ ] Status messages for progress, completion, and errors are perceivable without unnecessary focus movement.
 - [ ] Contrast is acceptable for text and essential indicators in light and dark themes.
 
 ## Step 3: Severity
@@ -100,6 +103,7 @@ After edits:
 
 - No new lint errors in changed files.
 - Core path works: entry → action → feedback → next step.
+- Long tasks work: start → progress → pause/cancel/resume or background → completion/partial failure → next step.
 - Focus order and keyboard operation remain usable.
 - State and count displays stay synchronized after actions.
 - Desktop and mobile layouts: no overlap, truncation, or unstable controls.
@@ -120,6 +124,8 @@ After edits:
 - [ ] 交互：快捷键不误伤输入区；模态选用正确（不可逆→AlertDialog）
 - [ ] 导航：上下文不丢（工作台详情、问卷步骤、面包屑）
 - [ ] 控件状态：hover/focus/disabled/loading 齐全
+- [ ] 长任务：进度、暂停/取消/恢复、部分失败与下一步清楚
+- [ ] Agentic 流程：自动处理与用户决策边界清楚
 - [ ] 可点击非按钮：role、tabIndex、Enter/Space、无冒泡冲突
 - [ ] 固定底栏：不挡主操作与安全区
 - [ ] 组件：优先 shadcn/ui；同类卡片结构一致

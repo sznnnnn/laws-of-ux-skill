@@ -15,6 +15,7 @@ Use $laws-of-ux-2 to review this checkout flow. Give me P0-P3 findings, applied 
 Use $laws-of-ux-2 to redesign this onboarding screen for lower cognitive load.
 Use $laws-of-ux-2 to inspect this frontend implementation before release.
 Use $laws-of-ux-2 to review this BuddyUp page against UX laws and the product design spec.
+Use $laws-of-ux-2 to review this AI generation/import flow for progress, pause, recovery, and user agency.
 ```
 
 ## Two Layers
@@ -38,6 +39,7 @@ Executable rules for BuddyUp/v0-ai: Notion-like tokens, shadcn components, inter
 | Flow redesign | IA/hierarchy decisions, interaction states, defaults, recovery paths | Checkout, onboarding, settings, dashboards |
 | Frontend acceptance | Visual, responsive, state, and interaction pass conditions | Before shipping a coded interface |
 | BuddyUp governance | Token/component/copy/accessibility/tour audit | 设计规范, UI 审查, visual consistency |
+| Agentic / long-task UX | Decision-rights map, progress states, pause/cancel/resume, recovery checks | AI generation, imports, sync, indexing, recommendations |
 | Metrics plan | Primary/guardrail metrics and experiment hypothesis | Turning design advice into validation work |
 | Visual evidence | Before/after diagrams or annotated screenshots | Explaining impact quickly to teammates |
 
@@ -91,6 +93,7 @@ Supporting chart: drop-off concentration at shipping step to validate optimizati
 | `references/review-rubric.md` | Severity model, review passes, scoring, visual evidence, product spec pass |
 | `references/design-governance-workflow.md` | Five-domain audit, P0-P3, PR self-check |
 | `references/buddyup-product-design-spec.md` | Full product design spec (tokens -> tours) |
+| `references/agentic-long-task-ux.md` | Decision-rights and progress/recovery checks for AI and long-running flows |
 | `references/cn-open-ux-notes.md` | Chinese examples and framing |
 | `references/metrics-mapping.md` | Laws -> measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots and diagram evidence |
