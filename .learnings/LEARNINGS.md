@@ -125,3 +125,35 @@ Keep as a daily research note; promote if future reviews repeatedly find hidden 
 - Evidence: Validated
 
 ---
+
+## [LRN-20260616-001] insight
+
+**Logged**: 2026-06-16T01:38:15Z
+**Priority**: medium
+**Status**: pending
+**Area**: accessibility
+
+### Summary
+Tap-target quality is about the whole activation area and spacing, not the visible icon size.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Coursera page, accessed 2026-06-16, frames UX foundations around user-centered design, accessibility, equity-focused design, research, prototyping, and usability testing: https://www.coursera.org/professional-certificates/google-ux-design
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Buttons, accessed 2026-06-16, recommends a hit region of at least 44x44 pt for buttons: https://developer.apple.com/design/human-interface-guidelines/buttons
+- Source: W3C WCAG 2.2 Understanding SC 2.5.8 Target Size (Minimum), accessed 2026-06-16, sets a 24x24 CSS pixel AA floor or sufficient spacing for pointer targets: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+- Source: Material Design 3 Touch Targets, accessed 2026-06-16, recommends touch targets of at least 48x48dp for most platforms: https://m3.material.io/foundations/designing/structure
+- Case: Baymard's promoted-filter research shows mobile product-list filters can reduce trips into a separate filter panel, but only if chips and remove/apply controls remain easy to hit and are still available in their normal filter location: https://baymard.com/blog/promoting-product-filters
+- Pattern: In dense mobile toolbars, filter chips, card actions, and inline icon buttons, inspect the tappable box and neighbor spacing separately from the visual glyph; allow invisible padding when visual density matters.
+- Counterexample: A row of tiny close icons on selected filters can look clean but makes accidental filter removal likely, especially one-handed or on moving transport.
+- What changed in product judgment: In reviews, Fitts's Law should be checked as a measurable target/spacing issue before praising compact visual hierarchy.
+- Where this skill should apply it: mobile filters, chip rows, icon-only buttons, carousels, table row actions, quick actions, and any control cluster near screen edges.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeat small icon-only controls or crowded chip rows.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, accessibility, target-size, fitts-law, mobile-filters
+- Evidence: Validated
+
+---
