@@ -2,7 +2,7 @@
 
 A Codex/Cursor skill that turns **Laws of UX** into concrete product judgment: UX reviews, product-flow redesign, frontend acceptance checks, and BuddyUp/v0-ai design-governance audits.
 
-Inspired by the packaging discipline in `alchaincyf/huashu-design`: clear trigger surface, opinionated workflow, visual examples, and deliverables that look useful before you read every reference file.
+Inspired by the packaging discipline in `alchaincyf/huashu-design` and the attached `ui-ux-pro-max` delivery checklist: clear trigger surface, opinionated workflow, visual examples, and deliverables that look useful before you read every reference file.
 
 ```bash
 npx skills add sznnnnn/laws-of-ux-skill
@@ -16,6 +16,7 @@ Use $laws-of-ux-2 to redesign this onboarding screen for lower cognitive load.
 Use $laws-of-ux-2 to inspect this frontend implementation before release.
 Use $laws-of-ux-2 to review this BuddyUp page against UX laws and the product design spec.
 Use $laws-of-ux-2 to review this AI generation/import flow for progress, pause, recovery, and user agency.
+Use $laws-of-ux-2 to polish this dashboard/landing page for professional UI delivery quality.
 ```
 
 ## Two Layers
@@ -40,6 +41,7 @@ Executable rules for BuddyUp/v0-ai: Notion-like tokens, shadcn components, inter
 | Frontend acceptance | Visual, responsive, state, and interaction pass conditions | Before shipping a coded interface |
 | BuddyUp governance | Token/component/copy/accessibility/tour audit | 设计规范, UI 审查, visual consistency |
 | Agentic / long-task UX | Decision-rights map, progress states, pause/cancel/resume, recovery checks | AI generation, imports, sync, indexing, recommendations |
+| Professional UI delivery | Style fit, contrast, icons, motion, responsive, light/dark quality checks | Landing pages, dashboards, admin panels, mobile UIs |
 | Metrics plan | Primary/guardrail metrics and experiment hypothesis | Turning design advice into validation work |
 | Visual evidence | Before/after diagrams or annotated screenshots | Explaining impact quickly to teammates |
 
@@ -94,6 +96,7 @@ Supporting chart: drop-off concentration at shipping step to validate optimizati
 | `references/design-governance-workflow.md` | Five-domain audit, P0-P3, PR self-check |
 | `references/buddyup-product-design-spec.md` | Full product design spec (tokens -> tours) |
 | `references/agentic-long-task-ux.md` | Decision-rights and progress/recovery checks for AI and long-running flows |
+| `references/professional-ui-delivery.md` | Professional visual UI, accessibility, interaction, responsive, and pre-delivery checks |
 | `references/cn-open-ux-notes.md` | Chinese examples and framing |
 | `references/metrics-mapping.md` | Laws -> measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots and diagram evidence |

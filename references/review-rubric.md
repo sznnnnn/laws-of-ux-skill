@@ -63,6 +63,7 @@ Score dimensions:
 - Feedback quality: does the interface respond clearly before, during, and after action?
 - Fit to expectations: does the design match familiar domain and platform patterns?
 - Craft and responsiveness: does layout survive realistic desktop/mobile sizes?
+- Professional UI delivery: do visual quality, accessibility, interaction states, and responsive details survive handoff?
 
 ## Keep / Fix / Quick Wins
 
@@ -89,6 +90,18 @@ Relevant laws: Jakob's Law, Mental Model, Hick's Law, Cognitive Load.
 - Are same-level actions styled consistently?
 
 Relevant laws: Proximity, Common Region, Similarity, Uniform Connectedness, Prägnanz.
+
+### Professional UI Delivery
+
+- Does the visual direction match the product type, audience, and task intensity?
+- Are icons, typography, color, spacing, shadows, borders, and containers consistent?
+- Are light and dark modes legible, especially muted text, glass surfaces, borders, and charts?
+- Do hover, focus, loading, disabled, error, empty, and success states feel complete?
+- Are fixed elements, sticky bars, and responsive reflow checked at realistic widths?
+
+Relevant laws: Aesthetic-Usability Effect, Jakob's Law, Fitts's Law, Proximity, Von Restorff Effect.
+
+Reference: `references/professional-ui-delivery.md`.
 
 ### Action Ergonomics
 
@@ -174,3 +187,4 @@ Relevant laws: Selective Attention, Von Restorff Effect, Proximity, Common Regio
 - Users can recover from mistakes through undo, edit, retry, or saved drafts.
 - Responsive layouts preserve grouping and task order.
 - Novel interactions have a clear user benefit and support first-time learning.
+- Professional delivery checks pass: contrast, focus, touch targets, icon consistency, no layout-shifting hover, no mobile horizontal scroll.

@@ -157,3 +157,27 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 - Evidence: Validated
 
 ---
+
+## [LRN-20260616-002] best_practice
+
+**Logged**: 2026-06-16T08:08:15Z
+**Priority**: high
+**Status**: promoted
+**Area**: implementation
+
+### Summary
+External UI/UX checklist skills should be absorbed as repo-local review references, not copied with unusable tool paths.
+
+### Details
+The attached `ui-ux-pro-max` draft contributed a useful professional UI delivery priority order: accessibility, touch/interaction, performance, responsive layout, typography/color, animation, style fit, and charts/data. Its `.claude/skills/.../scripts/search.py` workflow does not exist in this repo, so the reusable value is the static delivery checklist and pre-handoff quality bar, not the unavailable CLI.
+
+### Suggested Action
+Promoted into `SKILL.md`, `references/professional-ui-delivery.md`, `references/review-rubric.md`, `references/design-governance-workflow.md`, `templates/ux-review-template.md`, and `README.md`.
+
+### Metadata
+- Source: user_request
+- Related Files: SKILL.md, references/professional-ui-delivery.md, references/review-rubric.md, references/design-governance-workflow.md, templates/ux-review-template.md, README.md
+- Tags: ui-delivery, visual-quality, accessibility, responsive, professional-ui
+- Evidence: Contextual
+
+---

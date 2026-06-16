@@ -38,11 +38,15 @@ If ambiguous, ask for one preferred baseline screen or file path.
 - [ ] Spacing rhythm is consistent inside the same section.
 - [ ] Color usage is restrained (neutral + one accent strategy; token-only).
 - [ ] Shadows/borders are consistent across sibling cards/blocks.
+- [ ] Visual style matches the product type and task density; expressive styling does not weaken scanability.
+- [ ] Light and dark mode contrast works for text, muted text, cards, borders, and charts.
 
 ### B) Interaction Consistency
 
 - [ ] Click targets are clear and predictable.
+- [ ] Click/tap targets meet mobile comfort expectations, especially icon-only controls and dense chip rows.
 - [ ] Hover/focus/disabled/loading states exist for interactive controls.
+- [ ] Hover and active states do not shift layout or resize targets.
 - [ ] Long-running actions expose specific progress, completion, partial failure, and recovery states.
 - [ ] Agentic or automated flows separate routine automation from preference-sensitive pause/confirm moments.
 - [ ] Critical actions require confirmation when destructive (`AlertDialog`).
@@ -67,6 +71,7 @@ If ambiguous, ask for one preferred baseline screen or file path.
 - [ ] Similar cards/lists share structure and spacing logic.
 - [ ] Form fields use `Field*` layout (label / description / error placement).
 - [ ] Status tags/badges follow unified chip/tag tokens.
+- [ ] Functional icons come from one consistent icon system; emoji are not used as app UI icons.
 
 ### E) Accessibility Baseline
 
@@ -76,6 +81,7 @@ If ambiguous, ask for one preferred baseline screen or file path.
 - [ ] State is not conveyed by color only.
 - [ ] Status messages for progress, completion, and errors are perceivable without unnecessary focus movement.
 - [ ] Contrast is acceptable for text and essential indicators in light and dark themes.
+- [ ] Motion respects reduced-motion preferences when animation is nonessential.
 
 ## Step 3: Severity
 
@@ -107,6 +113,7 @@ After edits:
 - Focus order and keyboard operation remain usable.
 - State and count displays stay synchronized after actions.
 - Desktop and mobile layouts: no overlap, truncation, or unstable controls.
+- Professional UI delivery: no emoji-as-icons, invisible glass, hidden content behind fixed bars, or unintended mobile horizontal scroll.
 
 ## Step 6: Delivery Format
 
@@ -121,6 +128,7 @@ After edits:
 - [ ] 视觉层级：一屏内主 CTA 唯一且最突出
 - [ ] 色彩：无随意 hex；语义色来自 token；深色模式无断裂
 - [ ] 间距：同区块 gap/padding 节奏一致
+- [ ] 专业质感：图标、字体、卡片、边框、阴影、浅/深色对比统一
 - [ ] 交互：快捷键不误伤输入区；模态选用正确（不可逆→AlertDialog）
 - [ ] 导航：上下文不丢（工作台详情、问卷步骤、面包屑）
 - [ ] 控件状态：hover/focus/disabled/loading 齐全
