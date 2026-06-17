@@ -181,3 +181,35 @@ Promoted into `SKILL.md`, `references/professional-ui-delivery.md`, `references/
 - Evidence: Contextual
 
 ---
+
+## [LRN-20260617-001] insight
+
+**Logged**: 2026-06-17T02:00:06Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Destructive-action UX should match the recovery model: prevent irreversible harm, but prefer lightweight undo when recovery is reliable.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Coursera page, accessed 2026-06-17, emphasizes testing, iteration, accessibility, and user pain points in the design process: https://www.coursera.org/professional-certificates/google-ux-design
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Alerts, accessed 2026-06-17, says destructive alerts need a clear safe Cancel path: https://developer.apple.com/design/human-interface-guidelines/alerts
+- Source: Nielsen Norman Group, Error Prevention, accessed 2026-06-17, frames prevention as designing systems so slips and mistakes are less likely before they happen: https://www.nngroup.com/articles/error-prevention/
+- Source: Material Design 3 Snackbars, accessed 2026-06-17, supports brief feedback with optional actions such as undo/retry when the task can continue without a blocking dialog: https://m3.material.io/components/snackbar/guidelines
+- Case: Shopify Polaris common actions separates delete from ordinary actions, uses destructive styling, places delete at the bottom of action lists, and warns against ambiguous "x" icons for deletion: https://polaris-react.shopify.com/patterns/common-actions
+- Pattern: For delete/archive/remove flows, first classify reversibility. If the action is hard to undo, use explicit destructive styling, specific object names, and a safe Cancel path. If the action is reliably reversible, use immediate feedback plus Undo near the affected context instead of adding modal friction.
+- Counterexample: A generic "Are you sure?" dialog before every low-risk remove action teaches users to click through confirmations, while a snackbar undo for permanent account deletion under-protects the user.
+- What changed in product judgment: In reviews, confirmation dialogs should not be judged as automatically safer; the safer pattern depends on reversibility, consequence, and whether the UI can preserve recovery state.
+- Where this skill should apply it: bulk deletes, archive/remove actions, filter-chip removal, account/settings changes, AI-generated content replacement, and any workflow where user work can be lost.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly confuse confirmation, undo, and destructive styling.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, destructive-actions, error-prevention, undo, recovery
+- Evidence: Validated
+
+---
