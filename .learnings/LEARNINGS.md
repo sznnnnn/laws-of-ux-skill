@@ -182,6 +182,30 @@ Promoted into `SKILL.md`, `references/professional-ui-delivery.md`, `references/
 
 ---
 
+## [LRN-20260617-002] best_practice
+
+**Logged**: 2026-06-17T02:34:09Z
+**Priority**: medium
+**Status**: promoted
+**Area**: ux-law
+
+### Summary
+Beginner UX source material should become a compact foundations checklist, not a long book summary.
+
+### Details
+The local Interaction Design Foundation PDF covers UX definition, design thinking, Morville's seven UX factors, usability, interviews, research techniques, interaction design, mobile web, and information visualization. The reusable skill value is a beginner-friendly diagnostic layer that can explain UX basics to nontechnical collaborators before applying specific Laws of UX.
+
+### Suggested Action
+Promoted into `references/ux-foundations-idf.md`, `SKILL.md`, `references/review-rubric.md`, and `README.md`.
+
+### Metadata
+- Source: research
+- Related Files: references/ux-foundations-idf.md, SKILL.md, references/review-rubric.md, README.md
+- Tags: idf, ux-foundations, usability, research, mobile-ux, information-visualization
+- Evidence: Contextual
+
+---
+
 ## [LRN-20260617-001] insight
 
 **Logged**: 2026-06-17T02:00:06Z

@@ -1,6 +1,6 @@
 ---
 name: laws-of-ux-2
-description: Use when designing, reviewing, or refining UI/UX with Laws of UX plus professional UI delivery, BuddyUp/v0-ai product design spec, and design-governance checklists. Covers UX psychology, visual/interaction/copy/component consistency, accessibility, onboarding tours, frontend implementation, P0-P3 findings, Keep/Fix/Quick Wins, metric plans, visual evidence, 设计规范, 视觉统一, UI 审查, and acceptance checks. Trigger for UX review, UI critique, frontend review, Figma review, usability audit, product flow design, onboarding, checkout, dashboard, settings, form, IA, interaction states, cognitive load, design acceptance, and "is this easy to use?" tasks.
+description: Use when designing, reviewing, or refining UI/UX with Laws of UX plus UX foundations, professional UI delivery, BuddyUp/v0-ai product design spec, and design-governance checklists. Covers UX psychology, visual/interaction/copy/component consistency, accessibility, onboarding tours, frontend implementation, P0-P3 findings, Keep/Fix/Quick Wins, metric plans, visual evidence, 设计规范, 视觉统一, UI 审查, and acceptance checks. Trigger for UX review, UI critique, frontend review, Figma review, usability audit, product flow design, onboarding, checkout, dashboard, settings, form, IA, interaction states, cognitive load, design acceptance, and "is this easy to use?" tasks.
 ---
 
 # Laws of UX
@@ -12,6 +12,8 @@ For **BuddyUp / v0-ai** work, treat this skill as the unified design authority: 
 For agentic, AI-generation, import, sync, indexing, checkout-substitution, recommendation, or other long-running flows, read `references/agentic-long-task-ux.md`. Review the flow by decision rights: what the system may do automatically, what it must merely report, and where it should pause for user choice.
 
 For visual design, landing pages, dashboards, admin panels, mobile-first screens, or frontend delivery quality, read `references/professional-ui-delivery.md`. Use it to choose a fit-for-purpose visual direction and to catch common UI delivery failures before handoff.
+
+For beginner-friendly UX framing, early product discovery, usability basics, user interviews, UX research planning, mobile web fundamentals, or data-visualization reviews, read `references/ux-foundations-idf.md`. Use it to ground recommendations in plain UX fundamentals before applying sharper Laws of UX language.
 
 This skill distills Laws of UX into a working method. Do not recite the laws unless the user asks. Apply the smallest useful set of laws to the design decision in front of you.
 
@@ -50,17 +52,18 @@ Do not present disputed numeric thresholds as universal truth. Example:
    - **Product flow**: reduce decision cost, improve recovery, show progress (问卷 → 匹配 → 工作台 → 文书).
 2. **If scope is BuddyUp / v0-ai** (or user mentions 设计规范): read `references/buddyup-product-design-spec.md` for tokens, components, shortcuts, tours; run `references/design-governance-workflow.md` five-domain audit.
 3. **If scope is visual/UI build quality**: read `references/professional-ui-delivery.md` for priority checks, style fit, accessibility, responsive, and pre-delivery rules.
-4. Choose **3–7 laws** from `references/laws-map.md` (Primary first, Secondary to sharpen).
-5. Convert laws + product spec into interface decisions:
+4. **If scope is foundational UX, research, usability, mobile, or data visualization**: read `references/ux-foundations-idf.md`.
+5. Choose **3–7 laws** from `references/laws-map.md` (Primary first, Secondary to sharpen).
+6. Convert laws + product spec into interface decisions:
    - What should be visible first?
    - What should be grouped, hidden, deferred, or removed?
    - What should be default, constrained, confirmed, reversible, or automated?
    - What state must the UI communicate before, during, and after action?
-6. Check against the UX acceptance checklist below **and** product spec §10–12 (experience, onboarding) when applicable.
+7. Check against the UX acceptance checklist below **and** product spec §10–12 (experience, onboarding) when applicable.
    - For AI/agentic or long-running flows, also run `references/agentic-long-task-ux.md`.
-7. Deliver in product language unless the user asked for theory.
-8. Tag each major recommendation: `Validated` | `Contextual` | `Experimental`.
-9. For meaningful design work, run the self-iteration pass:
+8. Deliver in product language unless the user asked for theory.
+9. Tag each major recommendation: `Validated` | `Contextual` | `Experimental`.
+10. For meaningful design work, run the self-iteration pass:
    - Did any UX claim prove wrong, too broad, or unsupported?
    - Did the product context reveal a reusable design pattern?
    - Did visual/implementation verification expose a recurring failure mode?
@@ -111,6 +114,7 @@ Before marking a UI or flow complete, verify:
 - Secondary actions are available but lower emphasis than the primary path.
 - Related controls and information are grouped; unrelated items are separated.
 - The screen does not ask users to compare, remember, or decide among too many options at once.
+- The experience covers foundational UX factors: useful, usable, findable, credible, desirable, accessible, and valuable.
 - Defaults are helpful, safe, and easy to override.
 - Feedback appears immediately after user action: loading, success, error, empty, disabled, and partial states are designed.
 - Long-running operations show useful progress, allow safe pause/cancel/resume when feasible, and preserve the user's place.
@@ -263,6 +267,7 @@ Invoke proactively when the user mentions:
 | `references/buddyup-product-design-spec.md` | BuddyUp/v0-ai tokens, components, interaction, tours |
 | `references/agentic-long-task-ux.md` | Agentic, AI-generation, import, sync, and long-running flow review |
 | `references/professional-ui-delivery.md` | Professional visual UI, style-fit, frontend delivery, and pre-handoff checks |
+| `references/ux-foundations-idf.md` | IDF-inspired UX fundamentals: 7 factors, usability, research, interaction design, mobile, information visualization |
 | `references/cn-open-ux-notes.md` | Chinese examples and explainer framing |
 | `references/metrics-mapping.md` | Tie recommendations to measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots, flows, charts as evidence |

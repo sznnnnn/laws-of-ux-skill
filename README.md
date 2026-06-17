@@ -1,6 +1,6 @@
 # Laws of UX Skill
 
-A Codex/Cursor skill that turns **Laws of UX** into concrete product judgment: UX reviews, product-flow redesign, frontend acceptance checks, and BuddyUp/v0-ai design-governance audits.
+A Codex/Cursor skill that turns **Laws of UX** and UX foundations into concrete product judgment: UX reviews, product-flow redesign, frontend acceptance checks, and BuddyUp/v0-ai design-governance audits.
 
 Inspired by the packaging discipline in `alchaincyf/huashu-design` and the attached `ui-ux-pro-max` delivery checklist: clear trigger surface, opinionated workflow, visual examples, and deliverables that look useful before you read every reference file.
 
@@ -17,6 +17,7 @@ Use $laws-of-ux-2 to inspect this frontend implementation before release.
 Use $laws-of-ux-2 to review this BuddyUp page against UX laws and the product design spec.
 Use $laws-of-ux-2 to review this AI generation/import flow for progress, pause, recovery, and user agency.
 Use $laws-of-ux-2 to polish this dashboard/landing page for professional UI delivery quality.
+Use $laws-of-ux-2 to explain this flow with beginner-friendly UX fundamentals and research checks.
 ```
 
 ## Two Layers
@@ -37,6 +38,7 @@ Executable rules for BuddyUp/v0-ai: Notion-like tokens, shadcn components, inter
 | Task | Output | Best used for |
 |---|---|---|
 | UX review | Verdict, P0-P3 findings, Keep/Fix/Quick Wins, applied laws, evidence tags | Existing UI, Figma, screenshots, prototypes |
+| UX foundations | 7-factor UX check, usability 5E, research/interview fit, interaction dimensions | Early concepts, beginner-friendly explanations, discovery |
 | Flow redesign | IA/hierarchy decisions, interaction states, defaults, recovery paths | Checkout, onboarding, settings, dashboards |
 | Frontend acceptance | Visual, responsive, state, and interaction pass conditions | Before shipping a coded interface |
 | BuddyUp governance | Token/component/copy/accessibility/tour audit | 设计规范, UI 审查, visual consistency |
@@ -97,6 +99,7 @@ Supporting chart: drop-off concentration at shipping step to validate optimizati
 | `references/buddyup-product-design-spec.md` | Full product design spec (tokens -> tours) |
 | `references/agentic-long-task-ux.md` | Decision-rights and progress/recovery checks for AI and long-running flows |
 | `references/professional-ui-delivery.md` | Professional visual UI, accessibility, interaction, responsive, and pre-delivery checks |
+| `references/ux-foundations-idf.md` | IDF-inspired UX fundamentals: 7 factors, usability, research, interaction design, mobile, information visualization |
 | `references/cn-open-ux-notes.md` | Chinese examples and framing |
 | `references/metrics-mapping.md` | Laws -> measurable metrics |
 | `references/visual-evidence-guide.md` | Screenshots and diagram evidence |
@@ -129,4 +132,5 @@ Or symlink from your project's `.cursor/skills/` if you vendor skills per repo.
 ## Source
 
 - [Laws of UX](https://lawsofux.com/) by Jon Yablonski
+- Interaction Design Foundation, `The Basics of User Experience (UX) Design`, local PDF distillation
 - BuddyUp/v0-ai design spec and design-governance practice

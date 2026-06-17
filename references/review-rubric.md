@@ -64,6 +64,7 @@ Score dimensions:
 - Fit to expectations: does the design match familiar domain and platform patterns?
 - Craft and responsiveness: does layout survive realistic desktop/mobile sizes?
 - Professional UI delivery: do visual quality, accessibility, interaction states, and responsive details survive handoff?
+- Foundational UX: is the experience useful, usable, findable, credible, desirable, accessible, and valuable?
 
 ## Keep / Fix / Quick Wins
 
@@ -81,6 +82,18 @@ Score dimensions:
 - Are terms user-facing rather than implementation-facing?
 
 Relevant laws: Jakob's Law, Mental Model, Hick's Law, Cognitive Load.
+
+### Foundational UX Fit
+
+- Is the experience useful, usable, findable, credible, desirable, accessible, and valuable?
+- Does the review distinguish usability from broader UX value and trust?
+- Are research, assumptions, and user context clear enough for the design decision?
+- If the surface includes data, does the visualization support exploration, confirmation, or explanation honestly?
+- If the surface is mobile, does it account for small screens, touch input, interruptions, and unstable connections?
+
+Relevant laws: Jakob's Law, Fitts's Law, Miller's Law, Hick's Law, Postel's Law, Aesthetic-Usability Effect.
+
+Reference: `references/ux-foundations-idf.md`.
 
 ### Visual Grouping
 
@@ -181,6 +194,7 @@ Relevant laws: Selective Attention, Von Restorff Effect, Proximity, Common Regio
 - Secondary actions are present but visually subordinate.
 - Labels, controls, helper text, and errors sit near the relevant object.
 - The UI avoids forcing users to compare too many choices at once.
+- Foundational UX factors are considered: useful, usable, findable, credible, desirable, accessible, valuable.
 - Feedback appears immediately after every important action.
 - Long-running actions expose progress, preserve place, and provide pause/cancel/resume or recovery when feasible.
 - Agentic decisions clarify what was automated, what needs review, and what can be corrected.
