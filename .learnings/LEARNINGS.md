@@ -8,6 +8,37 @@ Use `references/self-iteration-workflow.md` for entry format and promotion rules
 
 ---
 
+## [LRN-20260619-001] insight
+
+**Logged**: 2026-06-19T01:21:16Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Empty states should explain the situation and give the next useful action; they are not decorative blank-space fillers.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Coursera page, accessed 2026-06-19, frames UX around empathizing with users, defining pain points, prototyping, testing, accessibility, and iteration: https://www.coursera.org/professional-certificates/google-ux-design
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Tab Bars, accessed 2026-06-19, says an empty section should explain why content is unavailable: https://developer.apple.com/design/human-interface-guidelines/tab-bars
+- Source: NN/g, Designing Empty States in Complex Applications, accessed 2026-06-19, recommends using empty states to communicate system status, improve learnability, and provide direct pathways for key tasks: https://www.nngroup.com/articles/empty-state-interface-design/
+- Case: GitLab Pajamas treats empty states as a reusable pattern for feature adoption, learnability, and usability; it also distinguishes no-results search copy from action-oriented first-use empty states: https://design.gitlab.com/patterns/empty-states
+- Pattern: For first-use, no-data, no-results, unavailable, or permission-limited states, state why the area is empty, keep one primary next action when appropriate, and avoid making the illustration or mascot carry the meaning.
+- Counterexample: A polished illustration with "Nothing here yet" can still fail if users cannot tell whether the system is loading, filters are too narrow, access is missing, or setup is required.
+- What changed in product judgment: Empty-state review should check diagnosis, actionability, and copy specificity before judging visual polish.
+- Where this skill should apply it: dashboards, tables, search/filter results, onboarding setup, permissions, import/indexing, AI memory inboxes, and product areas with sparse early user data.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find blank dashboards, unclear no-results screens, or decorative empty states without recovery paths.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, empty-states, learnability, system-status, onboarding
+- Evidence: Validated
+
+---
+
 ## [LRN-20260603-001] best_practice
 
 **Logged**: 2026-06-03T00:17:26Z
