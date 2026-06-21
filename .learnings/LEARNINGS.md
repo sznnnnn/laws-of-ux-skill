@@ -39,6 +39,37 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 
 ---
 
+## [LRN-20260621-001] insight
+
+**Logged**: 2026-06-21T01:32:03Z
+**Priority**: medium
+**Status**: pending
+**Area**: copy
+
+### Summary
+Validation errors should preserve the user's work, identify the exact field, and say how to fix the input.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; Google's public certificate page, accessed 2026-06-21, emphasizes personas, journey maps, usability studies, prototypes, testing, and iteration: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Entering Data, accessed 2026-06-21, recommends verifying values as people enter them and giving feedback when a problem is detected: https://developer.apple.com/design/human-interface-guidelines/entering-data
+- Source: W3C WCAG 2.2 Understanding SC 3.3.1 Error Identification and SC 3.3.3 Error Suggestion, accessed 2026-06-21, require text identification of detected input errors and correction suggestions when known: https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html and https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html
+- Case: GOV.UK Design System places error messages next to the relevant field and in an error summary, visually connects the message to the question, and explicitly says not to clear any form fields after an error: https://design-system.service.gov.uk/components/error-message/
+- Pattern: Keep valid and invalid answers in place, put specific text beside the field, mirror the field label in the message, summarize page-level errors when needed, and avoid blame, jargon, or "invalid" labels without a repair instruction.
+- Counterexample: A red border plus "Invalid input" after submit forces users to search, remember their previous answer, and guess the acceptable format; validating while the user is still typing can also feel punitive for fields like email or dates.
+- What changed in product judgment: Error review should check recovery cost and accessibility before judging whether the message is visually prominent enough.
+- Where this skill should apply it: sign-up, checkout, study-abroad forms, settings, imports, filters, AI setup prompts, and any flow where user-entered data can fail validation.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find vague validation copy, cleared fields, or inaccessible error summaries.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, validation, error-messages, accessibility, form-ux
+- Evidence: Validated
+
+---
+
 ## [LRN-20260603-001] best_practice
 
 **Logged**: 2026-06-03T00:17:26Z
