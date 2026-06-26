@@ -8,6 +8,37 @@ Use `references/self-iteration-workflow.md` for entry format and promotion rules
 
 ---
 
+## [LRN-20260626-001] insight
+
+**Logged**: 2026-06-26T13:40:12Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Forms should reuse known information and preserve entered data; repeated entry is a UX and accessibility failure, not just minor friction.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Google certificate page, accessed 2026-06-26, frames UX work around user pain points, wireframes/prototypes, usability studies, accessibility, and iteration: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Entering Data, accessed 2026-06-26, recommends helping people enter data efficiently and verifying values as people enter them: https://developer.apple.com/design/human-interface-guidelines/entering-data
+- Source: W3C WCAG 2.2 Understanding SC 3.3.7 Redundant Entry, accessed 2026-06-26, says information already entered in the same process should be auto-populated or available to select unless re-entry is essential: https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html
+- Case: GOV.UK Design System error-message guidance explicitly says not to clear any form fields after an error, keeping recovery local instead of making users retype known answers: https://design-system.service.gov.uk/components/error-message/
+- Pattern: In multi-step forms, checkout, onboarding, imports, and settings, carry forward known values, expose "same as..." reuse controls, preserve partially valid input, and only ask again when freshness, security, or legal confirmation truly requires it.
+- Counterexample: Asking users to retype address, passport, school, or configuration data after a validation error increases abandonment risk and disproportionately hurts users with memory, motor, fatigue, or assistive-technology constraints.
+- What changed in product judgment: Form reviews should flag redundant entry and cleared fields as higher-severity failures when the system already has the data or can safely offer reuse.
+- Where this skill should apply it: checkout, sign-up, study-abroad applications, profile/settings forms, AI setup flows, import wizards, and any multi-step process with repeated user data.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find repeated fields, lost form state, or missing "same as previous" controls.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, forms, redundant-entry, accessibility, recovery
+- Evidence: Validated
+
+---
+
 ## [LRN-20260619-001] insight
 
 **Logged**: 2026-06-19T01:21:16Z
