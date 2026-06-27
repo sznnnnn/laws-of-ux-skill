@@ -330,3 +330,35 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 - Evidence: Validated
 
 ---
+
+## [LRN-20260627-001] insight
+
+**Logged**: 2026-06-27T08:03:57Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Back, close, and cancel controls should preserve orientation by making the return destination and recovery cost predictable.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Grow with Google page, accessed 2026-06-27, frames UX work around empathizing with needs, journey maps, wireframes/prototypes, UX research, and testing early concepts: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG / WWDC navigation guidance, accessed 2026-06-27, emphasizes familiar navigation structures, hierarchy, modality, standard Back/Close controls, and preventing unnecessary confusion: https://developer.apple.com/videos/play/wwdc2022/10001/ and https://developer.apple.com/design/human-interface-guidelines/toolbars
+- Source: Android Developers Predictive Back, accessed 2026-06-27 and last updated 2026-06-18, lets users preview where a back swipe will take them and recommends moving custom back handling to supported callbacks: https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture
+- Source: Nielsen Norman Group, User Control and Freedom, accessed 2026-06-27, says users need a clear exit from unwanted states plus undo/redo for recovery: https://www.nngroup.com/articles/user-control-and-freedom/
+- Case: Baymard's ecommerce research found common overlays, filtering/sorting, accordion checkout, and product-list return patterns can violate browser Back expectations; the 2020 benchmark reported 59% of ecommerce sites missed at least one core Back expectation: https://baymard.com/blog/back-button-expectations
+- Pattern: Treat Back/Close/Cancel as a contract: label or animate the destination when possible, preserve list/filter/form state, warn only when recovery cost is real, and test platform back gestures in addition to visible buttons.
+- Counterexample: A polished modal, filter drawer, or custom single-page transition can look simple but break the user's mental model if Back skips the expected intermediate state or discards entered work.
+- What changed in product judgment: Reviews should inspect the navigation stack and state restoration, not just whether a visible back button exists.
+- Where this skill should apply it: mobile apps, modals/sheets, filters, search result pages, checkout accordions, multi-step forms, AI setup flows, and any custom router or overlay.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find broken back-stack behavior, lost list position, or ambiguous close/cancel exits.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, navigation, back-button, recovery, user-control
+- Evidence: Validated
+
+---
