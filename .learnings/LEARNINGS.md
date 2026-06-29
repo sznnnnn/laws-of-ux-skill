@@ -362,3 +362,82 @@ Keep as a daily research note; promote into the acceptance checklist if future r
 - Evidence: Validated
 
 ---
+
+## [LRN-20260628-001] best_practice
+
+**Logged**: 2026-06-28T22:31:17Z
+**Priority**: high
+**Status**: pending
+**Area**: governance
+
+### Summary
+Agentic/local-first dashboard reviews should verify the real core workflow and mobile first viewport before ranking UX findings.
+
+### Details
+A review of a local AI todo/memory workbench became sharper only after opening the running viewer at desktop and 390px mobile sizes. The first screenshot showed that the desktop dashboard was clean, but the mobile top navigation overflowed and the core "todo review" path was weaker than the generic dashboard stats. For agentic tools, judge the action loop first: capture/source -> extract/organize -> review evidence -> decide/complete. Do not let a polished overview screen hide weak empty states, unclear AI-generated labels, or missing next-step actions.
+
+### Suggested Action
+For future UX reviews of AI agents, memory tools, todo extractors, or local-first workbenches, start with three checks: real running product, mobile first viewport, and the primary decision loop. Then label recommendations as visual evidence, source/code evidence, or product inference.
+
+### Metadata
+- Source: visual_check
+- Related Files: references/self-iteration-workflow.md
+- Tags: agentic-ux, local-first, dashboard, mobile, evidence, todo-review
+- Evidence: Contextual
+
+---
+
+## [LRN-20260629-001] insight
+
+**Logged**: 2026-06-29T00:30:58+01:00
+**Priority**: high
+**Status**: pending
+**Area**: visual-design
+
+### Summary
+For nontechnical AI workbench UIs, prefer recognizable icons for repeat actions and status, while keeping text only where recognition would otherwise fail.
+
+### Details
+During AI Todo viewer iteration, the Settings panel initially used many English text controls and small explanatory copy. User feedback clarified that the product should reduce English visual weight: close, save, status, grouping, refresh, field categories, and repeated actions should use familiar icon affordances when possible. However, form field labels still need concise text because icon-only configuration fields create recall burden and ambiguity. The practical rule is icon-first for repeated commands and states, icon-plus-label for primary or consequential actions, and text labels for fields whose meaning is not universally recognizable.
+
+### Suggested Action
+Promote this into future UI review checks for AI Todo, Agentmemory, and local-first agent workbenches: scan every button/status/filter and ask whether a familiar icon can carry the recognition load without turning the UI into a guessing game.
+
+### Metadata
+- Source: user_feedback
+- Related Files: /Users/szn/记忆/AI-Todo/src/viewer/parts/app/60-actions-todo.js, /Users/szn/记忆/AI-Todo/src/viewer/parts/style/70-legacy-crystal-modal-settings-timeline.css
+- Tags: icon-first, nontechnical-ui, settings, ai-workbench, visual-hierarchy
+- Evidence: Contextual
+
+---
+
+## [LRN-20260629-002] insight
+
+**Logged**: 2026-06-29T09:17:24+01:00
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Binary settings need explicit state, scope, and consequence; a polished switch is not enough.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Grow with Google page, accessed 2026-06-29, frames UX design around empathizing with users, prototyping, research, and testing design decisions: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Toggles, accessed 2026-06-29, was used as the platform-pattern theme but could not be read directly in the CLI because the page requires JavaScript: https://developer.apple.com/design/human-interface-guidelines/toggles
+- Source: W3C WCAG 2.2 Understanding SC 1.4.1 Use of Color, accessed 2026-06-29, requires meaning to be conveyed with more than color alone: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html
+- Case: GitHub Primer's ToggleSwitch component requires an accessible label, supports On/Off text, loading state, custom contextual labels, and screen-reader loading announcements; Material Web's switch docs require labels or aria labels and support icons to emphasize selected state: https://primer.style/product/components/toggle-switch/ and https://material-web.dev/components/switch/
+- Pattern: For switches in settings, permissions, privacy, sync, AI automation, and notifications, pair the control with a concrete label, visible state text or icon, nearby consequence copy when impact is not obvious, disabled/loading feedback, and an accessible programmatic label.
+- Counterexample: A row of unlabeled color-only switches can look minimal but force users to infer whether the label describes the current state, the action after tap, or the setting scope.
+- What changed in product judgment: Reviews should inspect switch semantics before praising visual polish: is this truly immediate and binary, is the state visible without color, and does the user know what object or workflow changes?
+- Where this skill should apply it: settings panels, notification preferences, sync/import controls, AI-agent autonomy levels, permission gates, privacy toggles, and feature flags.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find ambiguous toggles, color-only states, or switches used for non-immediate decisions.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, toggles, settings, accessibility, state-visibility
+- Evidence: Validated
+
+---
