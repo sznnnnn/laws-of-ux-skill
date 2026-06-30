@@ -8,6 +8,37 @@ Use `references/self-iteration-workflow.md` for entry format and promotion rules
 
 ---
 
+## [LRN-20260630-001] insight
+
+**Logged**: 2026-06-30T08:03:35Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Search and autocomplete should teach users how to query, not only accelerate typing.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Grow with Google page, accessed 2026-06-30, frames UX work around empathizing with user needs, prototyping, research, and testing concepts early: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Search fields, accessed 2026-06-30, was used as the platform-pattern theme for predictable search placement, clear placeholder guidance, and cancellation behavior: https://developer.apple.com/design/human-interface-guidelines/search-fields
+- Source: Nielsen Norman Group, Search: Visible and Simple, accessed 2026-06-30, emphasizes making search easy to find and reducing query formulation burden: https://www.nngroup.com/articles/search-visible-and-simple/
+- Case: Algolia Autocomplete's public documentation shows query suggestions based on popular searches, recent searches that help recall, multiple result types in separate sections, and keyboard navigation as an accessibility requirement: https://www.algolia.com/doc/ui-libraries/autocomplete/guides/adding-suggested-searches, https://www.algolia.com/doc/ui-libraries/autocomplete/guides/adding-recent-searches, https://www.algolia.com/doc/ui-libraries/autocomplete/guides/including-multiple-result-types, and https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation
+- Pattern: For search-heavy products, show examples or scoped placeholders before input, update suggestions near the field, separate suggestions by type when useful, keep recent items editable/removable, and preserve a plain full-search path.
+- Counterexample: A visually polished omnibox that mixes commands, records, filters, and AI actions without type labels can increase cognitive load because users must guess which syntax or result class the system expects.
+- What changed in product judgment: Reviews should inspect whether search UI improves query formulation and result confidence, not just whether autocomplete exists.
+- Where this skill should apply it: memory libraries, AI chat archives, command palettes, dashboards, ecommerce search, docs search, and any interface where users must retrieve known or half-remembered items.
+
+### Suggested Action
+Keep as a daily research note; promote into the review checklist if future audits repeatedly find hidden search, ambiguous omniboxes, or suggestions without result-type clarity.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, search, autocomplete, query-formulation, findability
+- Evidence: Validated
+
+---
+
 ## [LRN-20260626-001] insight
 
 **Logged**: 2026-06-26T13:40:12Z
