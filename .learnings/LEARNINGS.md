@@ -8,6 +8,37 @@ Use `references/self-iteration-workflow.md` for entry format and promotion rules
 
 ---
 
+## [LRN-20260701-001] insight
+
+**Logged**: 2026-07-01T22:05:33Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Permission requests should ask for the smallest useful access and show how users can revise the scope later.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Grow with Google page, accessed 2026-07-01, frames UX work around user-centered research, prototyping, testing, and accessibility: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple HIG Privacy, accessed 2026-07-01, frames privacy as transparency about requested data and protection of what people allow: https://developer.apple.com/design/human-interface-guidelines/privacy
+- Source: Android Developers Blog, Choosing the right storage experience, accessed 2026-07-01, describes Android 14 Selected Photos Access for granting specific images/videos instead of all media: https://android-developers.googleblog.com/2023/08/choosing-right-storage-experience.html
+- Case: Android 14 media access lets users choose partial photo/video access and recommends apps handle re-selection so people can update which media the app can use.
+- Pattern: Request permissions at the moment of need, explain the benefit in user language, offer partial or task-scoped access when possible, and keep a visible way to edit granted scope later.
+- Counterexample: A gallery, AI memory, browser extension, or import tool that asks for broad access upfront before showing value makes the user decide under uncertainty and can look privacy-hostile even when technically legitimate.
+- What changed in product judgment: Permission UX should be reviewed as a scope-negotiation flow, not a one-time modal copy problem.
+- Where this skill should apply it: browser extensions, AI memory capture, file/photo imports, integrations, location features, notifications, and any product that requests access to private user data.
+
+### Suggested Action
+Keep as a daily research note; promote into privacy/agentic review guidance if future audits repeatedly find broad upfront permission requests or missing re-scope controls.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, permissions, privacy, access-scope, user-control
+- Evidence: Validated
+
+---
+
 ## [LRN-20260630-001] insight
 
 **Logged**: 2026-06-30T08:03:35Z
