@@ -8,6 +8,37 @@ Use `references/self-iteration-workflow.md` for entry format and promotion rules
 
 ---
 
+## [LRN-20260702-001] insight
+
+**Logged**: 2026-07-02T08:42:52Z
+**Priority**: medium
+**Status**: pending
+**Area**: interaction
+
+### Summary
+Authentication UX should reduce recall and transcription work before adding new security ceremony.
+
+### Details
+- Source: Google UX Design Professional Certificate private Notion source was treated as an inaccessible theme; the public Grow with Google page, accessed 2026-07-02, frames UX work around empathizing with users, prototyping, research, accessibility, and testing designs: https://grow.google/certificates/ux-design/
+- Source: Apple Design private Notion source was treated as an inaccessible theme; Apple Passkeys overview and WWDC passkey guidance, accessed 2026-07-02, frame passkeys as a familiar sign-in flow using AutoFill, Face ID, or Touch ID while avoiding password creation and reuse: https://developer.apple.com/passkeys/ and https://developer.apple.com/videos/play/wwdc2022/10092/
+- Source: W3C WCAG 2.2 Understanding SC 3.3.8 Accessible Authentication (Minimum), accessed 2026-07-02, says authentication should not require cognitive-function tests and must allow paste/autofill for codes when codes are used: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html
+- Case: GOV.UK's password input gives users a show/hide control, supports autocomplete, allows copy/paste, avoids confirm-password fields, and keeps password-specific labels distinct for assistive tech: https://design-system.service.gov.uk/components/password-input/
+- Pattern: For login, signup, import keys, API tokens, and local-first sync setup, support password managers and passkeys where possible, allow paste/autofill for passwords and OTPs, expose password requirements before error, provide show/hide with accessible labels, and keep recovery paths visible without leaking whether username or password failed.
+- Counterexample: A visually clean auth form that blocks paste, hides requirements until submit, demands confirm-password re-entry, or forces email OTP app-switching for every login can look secure while increasing abandonment and excluding users with memory, attention, or motor constraints.
+- What changed in product judgment: Reviews should treat authentication as a recovery-and-accessibility flow, not just a security gate; extra friction is only justified when it measurably reduces risk and still preserves assisted entry.
+- Where this skill should apply it: login/signup, passkey upgrade prompts, browser extensions, AI memory sync, API key setup, admin dashboards, account recovery, and any flow that asks users to prove identity or enter secrets.
+
+### Suggested Action
+Keep as a daily research note; promote into the acceptance checklist if future reviews repeatedly find blocked paste/autofill, hidden password rules, or login forms without accessible recovery.
+
+### Metadata
+- Source: research
+- Related Files: references/self-iteration-workflow.md, references/research-sources.md
+- Tags: daily-intake, ux-research, authentication, passkeys, password-input, accessibility, recovery
+- Evidence: Validated
+
+---
+
 ## [LRN-20260701-001] insight
 
 **Logged**: 2026-07-01T22:05:33Z
